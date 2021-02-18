@@ -1,0 +1,18 @@
+<div class="swiper-container max-h-96">
+    <div class="swiper-wrapper">
+        <div class="bg-blue-300  swiper-slide">
+            <div class="">
+                <h1>Awesomeness</h1>
+                <p class="">The regularity of which awesomness is percevied is not high, but with the right
+                    equipment, it can indeed be found.</p>
+            </div>
+        </div>
+        <div class="bg-red-300 swiper-slide">Slide 2</div>
+        <div class="bg-gray-300 swiper-slide">Slide 3</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>

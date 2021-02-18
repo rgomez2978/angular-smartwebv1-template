@@ -1,0 +1,155 @@
+<!-- <app-socials [color]="'blue-600'" [size]="'2xl'"></app-socials> -->
+<section class="fixed inset-0 w-full h-16 bg-white shadow xl:bg-contain">
+    <!-- Menu normal -->
+    <div class="flex items-center justify-center w-full h-16 px-4">
+      <nav class="flex items-center justify-between w-full ">
+        <div class="mt-1">
+          <a class="text-3xl font-semibold leading-none" href="#">
+            <img class="h-6 sm:h-10 lg:h-14" src="./assets/logo.png" alt="" width="auto">
+          </a>
+        </div>
+
+        <div class="md:hidden">
+          <button
+            class="flex items-center px-3 py-2 text-blue-600 border border-gray-200 rounded navbar-burger hover:text-gray-700 hover:border-gray-300">
+            <svg class="w-4 h-4 fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <ul
+          class="justify-end flex-1 hidden h-8 pr-5 text-xs uppercase lg:text-sm md:flex md:items-center md:w-auto md:space-x-4 md:text-xs">
+          <li>
+            <a class="h-full py-2 font-medium text-blue-600 transition duration-300 border-b-2 border-blue-600 " href="#">Inicio</a>
+          </li>
+          <li>
+            <a class="h-full py-2 font-medium text-gray-500 transition duration-300 border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600"
+              href="#">Nosotros</a>
+          </li>
+          <li>
+            <a class="h-full py-2 font-medium text-gray-500 transition duration-300 border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600"
+              href="#">Productos</a>
+          </li>
+          <li>
+            <a class="h-full py-2 font-medium text-gray-500 transition duration-300 border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600"
+              href="#">Clientes</a>
+          </li>
+          <li>
+            <a class="h-full py-2 font-medium text-gray-500 transition duration-300 border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600"
+              href="#">Aliados</a>
+          </li>
+          <li>
+            <a class="h-full py-2 font-medium text-gray-500 transition duration-300 border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600"
+              href="#">Noticias</a>
+          </li>
+          <li>
+            <a class="h-full py-2 font-medium text-gray-500 transition duration-300 border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600"
+              href="#">Contactos</a>
+          </li>
+        </ul>
+
+        <!-- <div class="hidden p-0 space-x-0 text-xs md:flex"> -->
+        <!-- Boton de busqueda -->
+        <button
+          class="hidden p-1 text-blue-600 md:block md:mt-1 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-white">
+          <i class="text-xl lg:text-xl fas fa-search"></i>
+        </button>
+        <!-- FIN // Boton de busqueda -->
+
+        <!-- Boton inicio de sesion  -->
+        <button
+          class="hidden px-2 py-2 ml-2 text-xs font-medium text-white uppercase transform scale-90 bg-blue-600 rounded md:block dark:bg-blue-800 hover:bg-blue-800 dark:hover:bg-blue-800 focus:outline-none focus:bg-blue-800 dark:focus:bg-blue-800">
+          <!-- INICIAR SESION -->
+          INGRESAR
+        </button>
+        <!-- FIN // Boton inicio de sesion  -->
+        <!-- </div> -->
+      </nav>
+    </div>
+    <!-- FIN // Menu normal -->
+
+
+    <!--Search-->
+    <div class="relative hidden w-full mt-0 bg-white shadow-xl" id="search-content">
+      <!-- <div class="container py-4 mx-auto text-black"> -->
+      <input id="searchfield" type="search" placeholder="Buscar..." autofocus="autofocus"
+        class="w-full p-2 text-lg leading-normal transition appearance-none text-grey-800 focus:outline-none focus:border-transparent lg:text-2xl">
+      <!-- </div> -->
+    </div>
+    <!--FIN // Search-->
+
+
+
+
+
+    <!-- Menu Mobile -->
+    <div class="relative z-50 md:hidden navbar-menu">
+      <!-- Overlay Menu mobile -->
+      <div class="fixed inset-0 bg-gray-800 opacity-25 navbar-backdrop"></div>
+      <!-- FIN // Overlay Menu mobile -->
+      <nav class="fixed top-0 bottom-0 left-0 flex flex-col w-2/3 max-w-sm px-6 py-6 overflow-y-auto bg-white border-r">
+        <div class="flex items-center mb-8">
+          <!-- Logo Empresa -->
+          <a class="mr-auto text-3xl font-semibold leading-none" href="#">
+            <img class="h-14" src="./assets/logo.png" alt="" width="auto">
+          </a>
+          <!-- FIN // Logo Empresa -->
+          <!-- Boton cerrar -->
+          <button class="navbar-close focus:outline-none">
+            <svg class="w-6 h-6 text-blue-600 cursor-pointer hover:text-blue-800" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewbox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+          <!-- FIN // Boton cerrar -->
+        </div>
+        <!-- Opciones del menu -->
+        <div>
+          <ul class="text-sm ">
+            <li class="mb-1">
+              <a class="block p-2 font-medium text-white bg-blue-600 rounded hover:bg-blue-800 hover:text-white"
+                href="#">Inicio</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-2 text-gray-500 rounded hover:bg-blue-50 hover:text-blue-700" href="#">Nosotros</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-2 text-gray-500 rounded hover:bg-blue-50 hover:text-blue-700" href="#">Productos</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-2 text-gray-500 rounded hover:bg-blue-50 hover:text-blue-700" href="#">Clientes</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-2 text-gray-500 rounded hover:bg-blue-50 hover:text-blue-700" href="#">Aliados</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-2 text-gray-500 rounded hover:bg-blue-50 hover:text-blue-700" href="#">Noticias</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-2 text-gray-500 rounded hover:bg-blue-50 hover:text-blue-700" href="#">Contactos</a>
+            </li>
+          </ul>
+        </div>
+        <!-- FIN // Opciones del menu -->
+
+        <!-- Footer menu -->
+        <div class="flex flex-col items-center justify-center mt-auto">
+          <div class="flex flex-col w-full pt-6 mt-4 border-t border-gray-100 ">
+            <a class="block px-4 py-3 mb-3 text-sm font-semibold leading-none text-center text-white bg-blue-700 rounded hover:bg-blue-800"
+              href="#">Iniciar sesión</a>
+            <a class="block px-4 py-3 mb-2 text-sm font-semibold leading-none text-center text-blue-500 bg-white border border-blue-400 rounded hover:bg-blue-400 hover:text-white hover:border-blue-400"
+              href="#">Registrar cuenta</a>
+          </div>
+          <p class="my-4 text-sm">
+            <span>Contáctanos: </span>
+            <a class="text-gray-400 hover:text-blue-600" href="#">info@smartsuitetools.com</a>
+          </p>
+          <app-socials [color]="'blue-600'" [size]="'2xl'"></app-socials>
+        </div>
+        <!-- FIN /Footer menu -->
+      </nav>
+    </div>
+    <!-- FIN // Menu Mobile -->
+  </section>

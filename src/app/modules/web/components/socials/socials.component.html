@@ -1,1 +1,20 @@
-<p>socials works!</p>
+<div class="flex flex-row items-center justify-start text-{{iconColor}} space-x-{{ iconSpace}}">
+    <a href="">
+        <i [ngClass]="{'color-facebook':iconColor === 'original'}" class="px-1 fab fa-facebook-square text-{{ iconSize }}"></i>
+    </a>
+    <a href="">
+        <i [ngClass]="{'color-twitter':iconColor === 'original'}" class="px-1 fab fa-twitter-square text-{{ iconSize }}"></i>
+    </a>
+    <a href="">
+        <i [ngClass]="{'color-instagram':iconColor === 'original'}" class="px-1 fab fa-instagram text-{{ iconSize }}"></i>
+    </a>
+    <a href="">
+        <i [ngClass]="{'color-whastapp':iconColor === 'original'}" class="px-1 fab fa-whatsapp text-{{ iconSize }}"></i>
+    </a>
+    <a href="">
+        <i [ngClass]="{'color-linkedin':iconColor === 'original'}" class="px-1 fab fa-linkedin text-{{ iconSize }}"></i>
+    </a>
+    <a href="">
+        <i [ngClass]="{'color-youtube':iconColor === 'original'}" class="px-1 fab fa-youtube-square text-{{ iconSize }}"></i>
+    </a>
+</div>

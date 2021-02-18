@@ -1,1 +1,49 @@
-<p>footer works!</p>
+<footer class="w-full text-white body-font">
+    <div class="w-full py-5 bg-bluelight">
+        <div class="flex flex-wrap items-center justify-between md:text-left">
+            <div class="hidden w-2/5 pl-5 md:block">
+                <div class="">
+                    <a class="text-3xl font-semibold leading-none" href="#">
+                        <img class="h-6 sm:h-10 lg:h-14" src="./assets/logo2.png" alt="" width="auto">
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-row justify-center w-full px-2 md:justify-end md:w-3/5">
+                <div class="flex flex-col justify-center w-full md:w-96 md:justify-end">
+                    <h2 class="flex justify-center mb-3 text-lg font-medium text-white md:justify-start md:text-base md:ml-5">
+                        Quieres conocer más de
+                        nuestros productos ? </h2>
+                    <div class="relative z-40 flex items-center justify-center mb-3 -ml-2 md:ml-5">
+                        <input type="text" id="footer-field" name="footer-field"
+                            class="flex w-64 h-8 px-3 py-1 ml-0 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out transform scale-90 bg-white border-gray-300 rounded outline-none md:w-56 md:-ml-3"
+                            placeholder="Correo electrónico">
+                        <button
+                            class="inline-flex items-center px-2 py-1 -ml-2 text-white capitalize transform scale-90 bg-opacity-75 border rounded border-bluedark md:-ml-2 md:scale-90 opacity-bluedark-75 bg-bluedark focus:outline-none text">Registrese
+                            Ahora</button>
+                    </div>
+                    <div class="flex justify-center md:ml-5">
+                        <app-socials [color]="'white'" [size]="'3xl'" [space]="'4'"></app-socials>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-bluedark">
+        <div class="flex flex-col items-center px-5 py-3 text-white md:justify-between sm:flex-wrap sm:flex-row">
+            <p class="flex justify-center w-full text-base md:justify-start md:text-sm md:w-1/5">@ 2021 GRUPO ALPHA</p>
+            <!-- <div class="grid grid-flow-row grid-cols-4 gap-2 text-xs text-center border border-white md:font-light md:mt-0 md:text-xs">
+                <div>Políticas de privacidad</div>
+                <div>Términos legales</div>
+                <div>Sitios relacionados</div>
+                <div>Mapa del sitio</div>
+            </div> -->
+            <ul
+                class="flex flex-row items-center justify-center w-full mt-2 space-x-10 text-xs list-none md:font-light md:mt-0 md:text-xs md:justify-end md:space-x-6 md:w-4/5">
+                <li>Políticas de privacidad</li>
+                <li>Términos legales </li>
+                <li>Sitios relacionados</li>
+                <li>Mapa del sitio</li>
+            </ul>
+        </div>
+    </div>
+</footer>

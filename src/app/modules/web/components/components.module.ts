@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,13 +16,49 @@ import { PromotionsComponent } from './promotions/promotions.component';
 import { ServicesComponent } from './services/services.component';
 import { NewsComponent } from './news/news.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { LoadingComponent } from './loading/loading.component';
 
 
 
 @NgModule({
-  declarations: [FooterComponent, NavbarComponent, HeaderComponent, CarouselComponent, CallToActionComponent, TabsComponent, SocialsComponent, FloatButtonComponent, ObjMediaComponent, PricingComponent, TabsAppComponent, PromotionsComponent, ServicesComponent, NewsComponent, ContactsComponent],
+  declarations: [
+    FooterComponent,
+    NavbarComponent,
+    HeaderComponent,
+    CarouselComponent,
+    CallToActionComponent,
+    TabsComponent,
+    SocialsComponent,
+    FloatButtonComponent,
+    ObjMediaComponent,
+    PricingComponent,
+    TabsAppComponent,
+    PromotionsComponent,
+    ServicesComponent,
+    NewsComponent,
+    ContactsComponent,
+    LoadingComponent
+  ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    FooterComponent,
+    NavbarComponent,
+    HeaderComponent,
+    CarouselComponent,
+    CallToActionComponent,
+    TabsComponent,
+    SocialsComponent,
+    FloatButtonComponent,
+    ObjMediaComponent,
+    PricingComponent,
+    TabsAppComponent,
+    PromotionsComponent,
+    ServicesComponent,
+    NewsComponent,
+    ContactsComponent,
+    LoadingComponent
   ]
 })
 export class ComponentsModule { }
