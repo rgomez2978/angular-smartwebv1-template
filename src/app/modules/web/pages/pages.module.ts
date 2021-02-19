@@ -14,6 +14,10 @@ import { PartnersComponent } from './partners/partners.component';
 import { NewsComponent } from './news/news.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ComponentsModule } from '../components/components.module';
+import { PrivacyPoliciesComponent } from './privacy-policies/privacy-policies.component';
+import { LegalTermsComponent } from './legal-terms/legal-terms.component';
+import { RelatedSitesComponent } from './related-sites/related-sites.component';
+import { SiteMapComponent } from './site-map/site-map.component';
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import { ComponentsModule } from '../components/components.module';
     ClientsComponent,
     PartnersComponent,
     NewsComponent,
-    ContactsComponent
+    ContactsComponent,
+    PrivacyPoliciesComponent,
+    LegalTermsComponent,
+    RelatedSitesComponent,
+    SiteMapComponent
   ],
   imports: [
     CommonModule,
@@ -42,7 +50,11 @@ import { ComponentsModule } from '../components/components.module';
     ClientsComponent,
     PartnersComponent,
     NewsComponent,
-    ContactsComponent
+    ContactsComponent,
+    PrivacyPoliciesComponent,
+    LegalTermsComponent,
+    RelatedSitesComponent,
+    SiteMapComponent
   ]
 })
 export class PagesModule { }

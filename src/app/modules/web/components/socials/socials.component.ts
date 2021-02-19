@@ -7,9 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SocialsComponent implements OnInit {
 
+  @Input() data: string;
   @Input() size: string;
   @Input() color: string;
   @Input() space: string;
+  iconData: string;
   iconSize: string;
   iconColor: string;
   iconSpace: string;
@@ -17,6 +19,7 @@ export class SocialsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.iconData = this.data;
     this.iconSize = this.size;
     this.iconColor = this.color;
     this.iconSpace = this.space;

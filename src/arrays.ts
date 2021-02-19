@@ -15,7 +15,7 @@
 // -----------------------------------------------------
 // NAVBAR - Arreglo final
 // -----------------------------------------------------
-let navbar: any = [
+this.navbar = [
     {
         nav_id: 1,
         name: 'Inicio',
@@ -79,7 +79,7 @@ let navbar: any = [
 // -----------------------------------------------------
 // HEADER - Arreglo final
 // -----------------------------------------------------
-let header: any = [
+this.header = [
     {
         hed_id: 1,
         title: 'ACERCA DE NOSOTROS',
@@ -169,7 +169,7 @@ let header: any = [
 // -----------------------------------------------------
 // CAROUSEL - Arreglo final
 // -----------------------------------------------------
-let carousel: any = [
+this.carousel = [
     {
         car_id: 1,
         image: '',
@@ -208,7 +208,7 @@ let carousel: any = [
 // -----------------------------------------------------
 // CALL TO ACTION - Arreglo final
 // -----------------------------------------------------
-let cta: any = [
+this.cta = [
     {
         cta_id: 1,
         title: '',
@@ -270,7 +270,7 @@ let cta: any = [
 // -----------------------------------------------------
 // PROMOTIONS - Arreglo final
 // -----------------------------------------------------
-let promotions: any = [
+this.promotions = [
     {
         promo_id: 1,
         title: '',
@@ -328,7 +328,7 @@ let promotions: any = [
 // -----------------------------------------------------
 // TABS - OURVALUES - Arreglo final
 // -----------------------------------------------------
-let tabsOurValues: any = [
+this.tabsOurValues = [
     {
         tbval_id: 1,
         title: 'Confianza',
@@ -373,7 +373,7 @@ let tabsOurValues: any = [
 
 
 // TABS PRODUCTS-  - Arreglo final
-let tabsProducts: any = [
+this.tabsProducts = [
     {
         tbprod_id: 1,
         title: 'SmartConnect',
@@ -458,7 +458,7 @@ let tabsProducts: any = [
 // -----------------------------------------------------
 // TABS-APP - Arreglo final
 // -----------------------------------------------------
-let tabsApplications: any = [
+this.tabsApplications = [
     {
         tbapp_id: 1,
         title: 'SmartConnect',
@@ -662,45 +662,61 @@ let tabsApplications: any = [
 ];
 
 
-// ########################################################################################
-// ## SOCIALS
-// ########################################################################################
-// condicional para cargar informacion de las redes sociales unicolor y colores originales (normal - original - arreglo de estructura)
-// - recibiendo un arreglo con multiples opciones desde el componente la data en texto e imagenes
-// - en caso de normal
-//     - icono
-//     - name
-//     - link
-//     - size
-// - en caso de original
-//     - icono
-//     - name
-//     - link
-//     - size
-//     - color
 // -----------------------------------------------------
 //  SOCIALS-  - Arreglo final
 // -----------------------------------------------------
-let iconSocials: any = [
+this.iconSocials = [
     {
-        is_id: 1,
-        icon: '',
-        title: '',
-        description: '',
-        size: '',
-        link: '',
-        order: 1,
+      is_id: 1,
+      icon: 'fab fa-facebook-square',
+      title: 'facebook',
+      description: 'facebook',
+      link: 'https://www.facebook.com/',
+      order: 1,
     },
     {
-        is_id: 2,
-        icon: '',
-        title: '',
-        description: '',
-        size: '',
-        link: '',
-        order: 2,
+      is_id: 2,
+      icon: 'fab fa-twitter-square',
+      title: 'twitter',
+      description: 'twitter',
+      link: 'https://twitter.com/',
+      order: 2,
+    },
+    {
+      is_id: 3,
+      icon: 'fab fa-instagram',
+      title: 'instagram',
+      description: 'instagram',
+      link: 'https://www.instagram.com/',
+      order: 3,
+    },
+    {
+      is_id: 4,
+      icon: 'fab fa-whatsapp',
+      title: 'whatsapp',
+      description: 'whatsapp',
+      link: 'https://www.whatsapp.com/',
+      order: 4,
+    },
+    {
+      is_id: 5,
+      icon: 'fab fa-linkedin',
+      title: 'linkedin',
+      description: 'linkedin',
+      link: 'https://es.linkedin.com/',
+      order: 5,
+    },
+    {
+      is_id: 6,
+      icon: 'fab fa-youtube-square',
+      title: 'youtube',
+      description: 'youtube',
+      link: 'https://www.youtube.com/',
+      order: 6,
     },
 ];
+
+
 
 // ########################################################################################
 // ## FLOAT-BUTTON
@@ -718,7 +734,7 @@ let iconSocials: any = [
 // -----------------------------------------------------
 //  FLOAT-BUTTON - Arreglo final
 // -----------------------------------------------------
-let buttonFloat: any = [
+this.buttonFloat = [
     {
         bf_id: 1,
         icon: '',
@@ -769,7 +785,7 @@ let buttonFloat: any = [
 // -----------------------------------------------------
 //  OBJECT-MEDIA - Arreglo final
 // -----------------------------------------------------
-let objMedia: any = [
+this.objMedia = [
     {
         om_id: 1,
         type: 'img',
@@ -814,7 +830,7 @@ let objMedia: any = [
 // -----------------------------------------------------
 //  PRICING - Arreglo final
 // -----------------------------------------------------
-let pricing: any = [
+this.pricing = [
     {
         pri_id: 1,
         title: 'Básico',
@@ -948,7 +964,7 @@ let pricing: any = [
 // -----------------------------------------------------
 //  OBJECT-MEDIA - Arreglo final
 // -----------------------------------------------------
-let services: any = [
+this.services = [
     {
         ser_id: 1,
         type: 'client',
@@ -1049,7 +1065,7 @@ let services: any = [
 // -----------------------------------------------------
 //  NEEWS - Arreglo final
 // -----------------------------------------------------
-let news: any = [
+this.news = [
     {
         nw_id: 1,
         type: 'last',
@@ -1158,4 +1174,42 @@ let news: any = [
         },
     }
 ];
+
+// ########################################################################################
+// ## TOOLBAR
+// ########################################################################################
+// condicional para cargar informacion de las noticias recibiendo parametros (arreglo de estructura)
+// - recibiendo un arreglo con multiples opciones desde el componente la data en texto e imagenes
+this.footerList = [
+    {
+      fo_id: 1,
+      description: 'Políticas de privacidad',
+      link: '/privacy',
+      order: 1,
+    },
+    {
+      fo_id: 2,
+      description: 'Términos legales',
+      link: '/terms',
+      order: 2,
+    },
+    {
+      fo_id: 3,
+      description: 'Sitios relacionados',
+      link: '/related',
+      order: 3,
+    },
+    {
+      fo_id: 4,
+      description: 'Mapa del sitio',
+      link: '/sitemap',
+      order: 4,
+    },
+  ];
+
+
+
+
+
+
 

@@ -19,7 +19,7 @@
                             class="flex w-64 h-8 px-3 py-1 ml-0 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out transform scale-90 bg-white border-gray-300 rounded outline-none md:w-56 md:-ml-3"
                             placeholder="Correo electrónico">
                         <button
-                            class="inline-flex items-center px-2 py-1 -ml-2 text-white capitalize transform scale-90 bg-opacity-75 rounded h-9 md:-ml-2 md:scale-90 opacity-bluedark-75 bg-bluedark focus:outline-none text">Registrese
+                            class="inline-flex items-center px-2 py-1 -ml-2 text-white capitalize transform scale-90 bg-opacity-75 border rounded border-bluedark md:-ml-2 md:scale-90 opacity-bluedark-75 bg-bluedark focus:outline-none text">Registrese
                             Ahora</button>
                     </div>
                     <div class="flex justify-center md:ml-5">

@@ -1,7 +1,7 @@
 <!-- <app-socials [color]="'blue-600'" [size]="'2xl'"></app-socials> -->
-<section class="fixed inset-0 z-50 w-full h-16 bg-white xl:bg-contain">
+<section class="fixed inset-0 z-50 w-full h-16 bg-white shadow xl:bg-contain">
   <!-- Menu normal -->
-  <div class="flex items-center justify-center w-full h-16 px-4 shadow-md">
+  <div class="flex items-center justify-center w-full h-16 px-4">
     <nav *ngFor="let item of dataNavbar; let i = index" class="flex items-center justify-between w-full ">
       <div class="mt-1">
         <a class="text-3xl font-semibold leading-none" href="#">
@@ -46,7 +46,7 @@
   </div>
   <!-- FIN // Menu normal -->
   <!--Search-->
-  <div class="relative hidden w-full mt-2 bg-white shadow-lg" id="search-content">
+  <div class="relative hidden w-full mt-2 bg-white shadow-xl" id="search-content">
     <!-- <div class="container py-4 mx-auto text-black"> -->
     <input id="searchfield" type="search" placeholder="Buscar..." autofocus="autofocus"
       class="w-full p-2 text-sm leading-normal text-gray-500 transition appearance-none focus:outline-none focus:border-transparent lg:text-xl">
