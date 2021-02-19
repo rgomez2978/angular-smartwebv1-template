@@ -1,7 +1,9 @@
 <div class="flex flex-col justify-between min-h-screen">
     <div class="flex flex-col flex-1">
         <app-navbar [data]="navbarList"></app-navbar>
-        <router-outlet></router-outlet>
+        <div class="flex mt-20">
+            <router-outlet></router-outlet>
+        </div>
     </div>
     <div class="w-full h-40">
         <app-footer [data]="footerList"></app-footer>
