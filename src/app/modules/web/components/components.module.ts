@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -37,10 +38,12 @@ import { LoadingComponent } from './loading/loading.component';
     ServicesComponent,
     NewsComponent,
     ContactsComponent,
-    LoadingComponent
+    LoadingComponent,
+
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgxUsefulSwiperModule
   ],
   exports: [
     FooterComponent,

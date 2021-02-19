@@ -1,70 +1,4 @@
 // ########################################################################################
-// ## NAVBAR
-// ########################################################################################
-// condicional recibiendo parametros type (normal - mobile - arreglo de estructura)
-// - recibiendo un arreglo con multiples opciones desde el componente con la data en texto e imagenes
-// - caso normal
-//     - name
-//     - link
-// - caso mobile
-//     - icon
-//     - name
-//     - link
-//     - socials
-//         - cargar componente socials
-// -----------------------------------------------------
-// NAVBAR - Arreglo final
-// -----------------------------------------------------
-this.navbar = [
-    {
-        nav_id: 1,
-        name: 'Inicio',
-        link: '/web/home',
-        icon: 'fas fa-home',
-        order: 1
-    },
-    {
-        nav_id: 2,
-        name: 'Nosotros',
-        link: '/web/about-us',
-        icon: 'fas fa-address-card',
-        order: 2
-    },
-    {
-        nav_id: 3,
-        name: 'Productos',
-        link: '/web/products',
-        icon: 'fab fa-artstation',
-        order: 3
-    }, {
-        nav_id: 4,
-        name: 'Clientes',
-        link: '/web/clients',
-        icon: 'fas fa-user-tag',
-        order: 4
-    }, {
-        nav_id: 5,
-        name: 'Aliados',
-        link: '/web/partners',
-        icon: 'fas fa-people-arrows',
-        order: 5
-    }, {
-        nav_id: 6,
-        name: 'News',
-        link: '/web/news',
-        icon: 'far fa-newspaper',
-        order: 6
-    }, {
-        nav_id: 7,
-        name: 'Contactos',
-        link: '/web/contacts',
-        icon: 'fas fa-envelope-open-text',
-        order: 7
-    },
-];
-
-
-// ########################################################################################
 // ## HEADER
 // ########################################################################################
 // condicional para el home y para paginas internas recibiendo parametros type (normal - animate - contactos - arreglo de estructura)
@@ -662,62 +596,6 @@ this.tabsApplications = [
 ];
 
 
-// -----------------------------------------------------
-//  SOCIALS-  - Arreglo final
-// -----------------------------------------------------
-this.iconSocials = [
-    {
-      is_id: 1,
-      icon: 'fab fa-facebook-square',
-      title: 'facebook',
-      description: 'facebook',
-      link: 'https://www.facebook.com/',
-      order: 1,
-    },
-    {
-      is_id: 2,
-      icon: 'fab fa-twitter-square',
-      title: 'twitter',
-      description: 'twitter',
-      link: 'https://twitter.com/',
-      order: 2,
-    },
-    {
-      is_id: 3,
-      icon: 'fab fa-instagram',
-      title: 'instagram',
-      description: 'instagram',
-      link: 'https://www.instagram.com/',
-      order: 3,
-    },
-    {
-      is_id: 4,
-      icon: 'fab fa-whatsapp',
-      title: 'whatsapp',
-      description: 'whatsapp',
-      link: 'https://www.whatsapp.com/',
-      order: 4,
-    },
-    {
-      is_id: 5,
-      icon: 'fab fa-linkedin',
-      title: 'linkedin',
-      description: 'linkedin',
-      link: 'https://es.linkedin.com/',
-      order: 5,
-    },
-    {
-      is_id: 6,
-      icon: 'fab fa-youtube-square',
-      title: 'youtube',
-      description: 'youtube',
-      link: 'https://www.youtube.com/',
-      order: 6,
-    },
-];
-
-
-
 // ########################################################################################
 // ## FLOAT-BUTTON
 // ########################################################################################
@@ -1174,39 +1052,6 @@ this.news = [
         },
     }
 ];
-
-// ########################################################################################
-// ## TOOLBAR
-// ########################################################################################
-// condicional para cargar informacion de las noticias recibiendo parametros (arreglo de estructura)
-// - recibiendo un arreglo con multiples opciones desde el componente la data en texto e imagenes
-this.footerList = [
-    {
-      fo_id: 1,
-      description: 'Políticas de privacidad',
-      link: '/privacy',
-      order: 1,
-    },
-    {
-      fo_id: 2,
-      description: 'Términos legales',
-      link: '/terms',
-      order: 2,
-    },
-    {
-      fo_id: 3,
-      description: 'Sitios relacionados',
-      link: '/related',
-      order: 3,
-    },
-    {
-      fo_id: 4,
-      description: 'Mapa del sitio',
-      link: '/sitemap',
-      order: 4,
-    },
-  ];
-
 
 
 

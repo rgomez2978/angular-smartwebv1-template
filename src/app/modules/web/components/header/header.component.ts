@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-// import Swiper from 'swiper';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
-import Swiper from 'swiper/bundle';
-// import 'swiper/swiper-bundle.css';
+import { SwiperOptions } from 'swiper';
+
+// import Swiper from 'swiper/bundle';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -10,67 +11,66 @@ import Swiper from 'swiper/bundle';
 })
 export class HeaderComponent implements OnInit {
 
+  @Input() data: any;
   imgUrl = './assets/fondo_banner.jpg';
-  constructor() { }
+  dataHeaderList: any;
+
+  constructor(private _router: Router) { }
+
+  config: SwiperOptions = {
+    speed: 800,
+    loop: true,
+    // grabCursor: true,
+    initialSlide: 1,
+    autoHeight: true,
+    allowTouchMove: true,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: true
+    },
+    // breakpoints: {
+    //   1024: {
+    //     slidesPerView: 4
+    //   },
+    //   500: {
+    //     slidesPerView: 3
+    //   },
+    //   400: {
+    //     slidesPerView: 2
+    //   },
+    //   300: {
+    //     slidesPerView: 1
+    //   }
+    // },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+  };
+
   ngOnInit(): void {
-
-    /* Card Slider - Swiper */
-    let cardSlider = new Swiper('.banner-slider', {
-      // autoplay: {
-      //   delay: 4000,
-      //   disableOnInteraction: false
-      // },
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      }
-    });
-
-    // const swiper = new Swiper('.banner-slider', {
-    //   // effect: 'fade',
-    //   // fadeEffect: {
-    //   //   crossFade: true
-    //   // },
-    //   slidesPerView: 1,
-    //   spaceBetween: 0,
-    //   speed:500,
-    //   loop: true,
-    //   autoplay: {
-    //     delay: 6500,
-    //     disableOnInteraction: false,
-    //   },
-    //   // preloadImages: true,
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    //   },
-    //   navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    //   },
-    // });
+    this.dataHeaderList = this.data;
+    console.log('this.dataHeaderList :>> ', this.dataHeaderList);
+  }
 
 
 
-    // const swiper = new Swiper('.swiper-container', {
-    //   spaceBetween: 0,
-    //   centeredSlides: true,
-    //   autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    //   },
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    //   },
-    //   navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    //   },
-    // });
+  /**
+   * -------------------------------------------------------
+   * @summary goTo
+   * @description redirecciona a la ruta de cada componete o routerlink
+   * -------------------------------------------------------
+   */
+  goTo(link) {
+    console.log('link :>> ', link);
+    this._router.navigate([link]);
 
   }
+
 
 
 }

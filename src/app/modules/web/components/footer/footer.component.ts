@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 
 // import { RouterLinkActive } from '@angular/router';
@@ -19,8 +19,7 @@ export class FooterComponent implements OnInit {
 
 
   constructor(
-    private _router: Router,
-    private _activatedRoute: ActivatedRoute
+    private _router: Router
   ) {
 
   }

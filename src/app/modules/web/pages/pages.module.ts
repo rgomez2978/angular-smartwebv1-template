@@ -40,7 +40,7 @@ import { SiteMapComponent } from './site-map/site-map.component';
     ComponentsModule,
     FormsModule,
     ReactiveFormsModule,
-    WebRoutingModule
+    WebRoutingModule,
   ],
   exports: [
     PagesComponent,
