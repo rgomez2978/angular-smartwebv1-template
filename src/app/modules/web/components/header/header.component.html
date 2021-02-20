@@ -1,4 +1,4 @@
-<swiper [config]="config">
+<swiper [config]="configHeaderSlide">
   <div class="w-full h-full swiper-wrapper">
       <div *ngFor="let item of dataHeaderList; let i = index" class="hidden w-full h-full p-10 swiper-slide sm:flex">
           <img [src]="item.background" class="imgBanner">
@@ -26,7 +26,7 @@
                   <div
                       class="flex flex-row items-center justify-end w-full space-x-4 text-sm transform scale-50 md:scale-75 lg:scale-90 xl:scale-100 md:-ml-5 lg:-ml-10 xl:-ml-20">
                       <div *ngFor="let itemBtn of item.buttons; let i = index">
-                          <div class="flex p-2 px-3 font-medium uppercase border-2 border-blue-900 rounded focus:outline-none" [ngClass]="itemBtn.type === 'active'?'text-white bg-blue-900  hover:bg-bluedark hover:border-bluedark ':'bg-transparente hover:bg-blue-800 hover:border-blue-800 text-blue-900 hover:text-white'">
+                          <div class="flex p-2 px-3 font-bold uppercase border-2 border-blue-900 rounded focus:outline-none" [ngClass]="itemBtn.type === 'active'?'text-white bg-blue-900  hover:bg-bluedark hover:border-bluedark ':'bg-transparente  hover:bg-blue-800 hover:border-blue-800 text-blue-900 hover:text-white'">
                               <a [href]="itemBtn.link">{{itemBtn.name}}</a>
                           </div>
                           <!-- <button (click)="goTo(itemBtn.link)"
@@ -40,7 +40,7 @@
       </div>
   </div>
   <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
+  <!-- <div class="swiper-pagination"></div> -->
   <!-- Add Arrows -->
   <div class="transform scale-75 lg:scale-90 swiper-button-next "></div>
   <div class="transform scale-75 lg:scale-90 swiper-button-prev "></div>

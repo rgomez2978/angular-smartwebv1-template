@@ -34,11 +34,6 @@
   }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  @apply text-gray-50 opacity-75;
-}
-
 .swiper-container-horizontal>.swiper-pagination-bullet-active {
   background-color: #ff89 !important;
   opacity: 0 !important;

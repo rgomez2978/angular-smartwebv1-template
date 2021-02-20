@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { SwiperOptions } from 'swiper';
 
 // import Swiper from 'swiper/bundle';
@@ -12,36 +11,21 @@ import { SwiperOptions } from 'swiper';
 export class HeaderComponent implements OnInit {
 
   @Input() data: any;
-  imgUrl = './assets/fondo_banner.jpg';
   dataHeaderList: any;
 
   constructor(private _router: Router) { }
 
-  config: SwiperOptions = {
+  configHeaderSlide: SwiperOptions = {
     speed: 800,
     loop: true,
-    // grabCursor: true,
-    initialSlide: 1,
-    autoHeight: true,
+    initialSlide: 0,
+    slidesPerView: 1,
+    autoHeight: false,
     allowTouchMove: true,
     autoplay: {
       delay: 6000,
       disableOnInteraction: true
     },
-    // breakpoints: {
-    //   1024: {
-    //     slidesPerView: 4
-    //   },
-    //   500: {
-    //     slidesPerView: 3
-    //   },
-    //   400: {
-    //     slidesPerView: 2
-    //   },
-    //   300: {
-    //     slidesPerView: 1
-    //   }
-    // },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
