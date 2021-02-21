@@ -196,6 +196,36 @@ this.headerSlideList = [
     },
 ];
 
+// -----------------------------------------------------
+//  HEADER INTERN - Arreglo final
+// -----------------------------------------------------
+this.headerInternList = [
+    {
+        hs_id: 1,
+        background: './assets/fondo_banner_intern.jpg',
+        image: './assets/about.png',
+        title: 'Acerca de',
+        title2: 'Nosotros',
+        description: 'Contamos con la experiencia necesaria para brindar servicios en organizaciones como la suya, a fin de planificar, implementar y administrar soluciones digitales multiplataforma personalizadas',
+        order: 1,
+        buttons: [
+            {
+                btn_id: 1,
+                type: 'active',
+                name: 'empezar',
+                link: '/privacy',
+                order: 1
+            },
+            {
+                btn_id: 2,
+                type: 'normal',
+                name: 'demostración',
+                link: '/related',
+                order: 2
+            },
+        ],
+    }
+];
 
 // -----------------------------------------------------
 //  CAROUSE CLIENTS - Arreglo final
