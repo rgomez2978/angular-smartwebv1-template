@@ -196,6 +196,7 @@ this.headerSlideList = [
     },
 ];
 
+
 // -----------------------------------------------------
 //  CAROUSE CLIENTS - Arreglo final
 // -----------------------------------------------------
@@ -350,6 +351,108 @@ this.carouselListService = [
         sumary: {
             description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodsadsdasd asdasdas dsadas sdas sad asdasd assadas dsadasdasd.',
             size: 'text-md',
+        },
+        order: 6
+    },
+];
+
+// -----------------------------------------------------
+//  CAROUSE TESTIMONIALS - Arreglo final
+// -----------------------------------------------------
+this.carouselListTestimonials = [
+    {
+        cst_id: 1,
+        icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+        },
+        sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+        },
+        sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+        },
+        order: 1
+    },
+    {
+        cst_id: 2,
+        icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+        },
+        sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+        },
+        sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+        },
+        order: 2
+    },
+    {
+        cst_id: 3,
+        icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+        },
+        sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+        },
+        sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+        },
+        order: 3
+    },
+    {
+        cst_id: 4,
+        icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+        },
+        sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+        },
+        sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+        },
+        order: 4
+    },
+    {
+        cst_id: 5,
+        icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+        },
+        sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+        },
+        sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+        },
+        order: 5
+    },
+    {
+        cst_id: 6,
+        icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+        },
+        sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+        },
+        sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
         },
         order: 6
     },

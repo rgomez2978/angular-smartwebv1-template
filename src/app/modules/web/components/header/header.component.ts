@@ -11,19 +11,26 @@ import { SwiperOptions } from 'swiper';
 export class HeaderComponent implements OnInit {
 
   @Input() data: any;
-  dataHeaderList: any;
+  @Input() type: any;
+
 
   constructor(private _router: Router) { }
 
+  // Configuracion Header - Slider
   configHeaderSlide: SwiperOptions = {
+    direction: 'horizontal',
+    preventClicks: false,
     speed: 800,
-    loop: true,
+    loop: false,
+    freeMode: true,
     initialSlide: 0,
-    slidesPerView: 1,
-    autoHeight: false,
+    autoHeight: true,
+    centeredSlides: true,
     allowTouchMove: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
     autoplay: {
-      delay: 6000,
+      delay: 3000,
       disableOnInteraction: true
     },
     navigation: {
@@ -37,8 +44,6 @@ export class HeaderComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    this.dataHeaderList = this.data;
-    console.log('this.dataHeaderList :>> ', this.dataHeaderList);
   }
 
 

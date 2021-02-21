@@ -20,6 +20,7 @@ module.exports = {
       white: '#fff',
       bluedark: '#102f4f',
       bluelight: '#1680f8',
+      blueaqua:'#4fceff',
 
       red: {
         50: "#ffebee",
@@ -353,6 +354,9 @@ module.exports = {
       100: '28rem',
       105: '30rem',
       110: '35rem',
+      115: '40rem',
+      120: '45rem',
+
     },
     animation: {
       none: 'none',

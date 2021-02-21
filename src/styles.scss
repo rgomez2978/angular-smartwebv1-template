@@ -5,7 +5,15 @@
 @import '~swiper/swiper-bundle';
 
 body {
-  font-family: 'Geometria';
+  font-family: 'Geometria-Medium';
   // @apply leading-7;
   // @apply bg-gray-50;
+}
+
+p{
+  font-family: 'Geometria';
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Geometria-Bold';
 }

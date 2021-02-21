@@ -1,6 +1,5 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SwiperOptions } from 'swiper';
-import { SwiperComponent } from 'ngx-useful-swiper';
 
 @Component({
   selector: 'app-carousel',
@@ -172,10 +171,10 @@ export class CarouselComponent implements OnInit {
       clickable: true
     },
   };
+
+
+
   ngOnInit(): void {
-    // this.dataCarouselList = this.data;
-    console.log('this.dataCarouselList :>> ', this.data);
-    console.log('this.dataCarouselType :>> ', this.type);
   }
 
 }
