@@ -1,7 +1,8 @@
 <br>
 <br>
-<app-header [data]="headerInternList" [type]="'intern'"></app-header>
+<app-header [data]="contentPartners[0].header" [type]="'intern'"></app-header>
 <br>
 <br>
 <app-title-header [label1]="'testimo'" [label2]="'nios'" [words]="1" ></app-title-header>
-<app-carousel [data]="carouselListTestimonials" [type]="'testimonials'"></app-carousel>
+<app-carousel [data]="contentPartners[0].testimonials" [type]="'testimonials'"></app-carousel>
+<br>

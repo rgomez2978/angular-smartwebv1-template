@@ -4,7 +4,7 @@
             <div class="hidden w-2/5 pl-5 md:block">
                 <div class="">
                     <a class="text-3xl font-semibold leading-none" href="#">
-                        <img class="h-6 sm:h-10 lg:h-14" src="./assets/logo2.png" alt="" width="auto">
+                        <img class="h-6 sm:h-10 lg:h-14" [src]="data[0].img" alt="" width="auto">
                     </a>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                             Ahora</button>
                     </div>
                     <div class="flex justify-center md:ml-5">
-                        <app-socials [data]="iconSocials" [color]="'white'" [size]="'3xl'" [space]="'4'"></app-socials>
+                        <app-socials [data]="data[0].socials" [color]="'white'" [size]="'text-3xl'" [space]="'4'"></app-socials>
                     </div>
                 </div>
             </div>
@@ -34,13 +34,13 @@
             <h1 class="flex justify-center w-full text-white text-ba md:justify-start md:text-sm md:w-1/4">@ 2021 GRUPO ALPHA</h1>
             <ul
                 class="flex-row flex-wrap items-center justify-start hidden w-full mt-2 space-x-8 text-xs list-none sm:flex md:flex-nowrap md:font-light md:mt-0 md:text-xs sm:justify-center md:justify-end md:space-x-6 md:w-3/4">
-                <li *ngFor="let item of dataFooter; let i = index">
-                    <a [href]="item.link" [ngClass]="urlActive === item.link ?'text-smart-100':'text-white'" class="cursor-pointer hover:text-smart-100">{{ item.description }}</a>
+                <li *ngFor="let item of data[0].links; let i = index">
+                    <a [href]="item.link" [ngClass]="urlActive === item.link ?'text-smart-100':'text-white'" class="font-bold cursor-pointer hover:text-smart-100">{{ item.description }}</a>
                 </li>
             </ul>
             <div
                 class="grid grid-flow-col grid-cols-2 grid-rows-2 gap-4 mt-5 text-sm sm:hidden md:mt-0 md:grid-cols-4 md:grid-rows-1">
-                <div *ngFor="let item of dataFooter; let i = index">
+                <div *ngFor="let item of data[0].links; let i = index">
                     <a [href]="item.link" routerLinkActive="text-smart-100"  [ngClass]="urlActive === item.link ?'text-smart-100':'text-white'" class="cursor-pointer hover:text-smart-100">{{ item.description }}</a>
                 </div>
             </div>

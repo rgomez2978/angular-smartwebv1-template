@@ -7,22 +7,23 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SocialsComponent implements OnInit {
 
-  @Input() data: string;
+  @Input() data: any;
   @Input() size: string;
   @Input() color: string;
   @Input() space: string;
-  iconData: string;
-  iconSize: string;
   iconColor: string;
-  iconSpace: string;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.iconData = this.data;
-    this.iconSize = this.size;
-    this.iconColor = this.color;
-    this.iconSpace = this.space;
+    setTimeout(() => {
+      if (this.color === 'orig') {
+        this.iconColor = this.data[0].title;
+      } else {
+        this.iconColor = this.color;
+      }
+      console.log('this.iconColor :>> ', this.iconColor);
+    }, 100);
   }
 
 }

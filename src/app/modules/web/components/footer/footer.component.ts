@@ -64,56 +64,56 @@ export class FooterComponent implements OnInit {
    * -------------------------------------------------------
    */
   initArray() {
-    this.iconSocials = [
-      {
-        is_id: 1,
-        icon: 'fab fa-facebook-square',
-        title: 'facebook',
-        description: 'facebook',
-        link: 'https://www.facebook.com/',
-        order: 1,
-      },
-      {
-        is_id: 2,
-        icon: 'fab fa-twitter-square',
-        title: 'twitter',
-        description: 'twitter',
-        link: 'https://twitter.com/',
-        order: 2,
-      },
-      {
-        is_id: 3,
-        icon: 'fab fa-instagram',
-        title: 'instagram',
-        description: 'instagram',
-        link: 'https://www.instagram.com/',
-        order: 3,
-      },
-      {
-        is_id: 4,
-        icon: 'fab fa-whatsapp',
-        title: 'whatsapp',
-        description: 'whatsapp',
-        link: 'https://www.whatsapp.com/',
-        order: 4,
-      },
-      {
-        is_id: 5,
-        icon: 'fab fa-linkedin',
-        title: 'linkedin',
-        description: 'linkedin',
-        link: 'https://es.linkedin.com/',
-        order: 5,
-      },
-      {
-        is_id: 6,
-        icon: 'fab fa-youtube-square',
-        title: 'youtube',
-        description: 'youtube',
-        link: 'https://www.youtube.com/',
-        order: 6,
-      },
-    ];
+    // this.iconSocials = [
+    //   {
+    //     is_id: 1,
+    //     icon: 'fab fa-facebook-square',
+    //     title: 'facebook',
+    //     description: 'facebook',
+    //     link: 'https://www.facebook.com/',
+    //     order: 1,
+    //   },
+    //   {
+    //     is_id: 2,
+    //     icon: 'fab fa-twitter-square',
+    //     title: 'twitter',
+    //     description: 'twitter',
+    //     link: 'https://twitter.com/',
+    //     order: 2,
+    //   },
+    //   {
+    //     is_id: 3,
+    //     icon: 'fab fa-instagram',
+    //     title: 'instagram',
+    //     description: 'instagram',
+    //     link: 'https://www.instagram.com/',
+    //     order: 3,
+    //   },
+    //   {
+    //     is_id: 4,
+    //     icon: 'fab fa-whatsapp',
+    //     title: 'whatsapp',
+    //     description: 'whatsapp',
+    //     link: 'https://www.whatsapp.com/',
+    //     order: 4,
+    //   },
+    //   {
+    //     is_id: 5,
+    //     icon: 'fab fa-linkedin',
+    //     title: 'linkedin',
+    //     description: 'linkedin',
+    //     link: 'https://es.linkedin.com/',
+    //     order: 5,
+    //   },
+    //   {
+    //     is_id: 6,
+    //     icon: 'fab fa-youtube-square',
+    //     title: 'youtube',
+    //     description: 'youtube',
+    //     link: 'https://www.youtube.com/',
+    //     order: 6,
+    //   },
+    // ];
   }
 
 

@@ -66,7 +66,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     NewsComponent,
     ContactsComponent,
     LoadingComponent,
-    TitleHeaderComponent
+    TitleHeaderComponent,
+    BreadcrumbComponent,
   ]
 })
 export class ComponentsModule { }

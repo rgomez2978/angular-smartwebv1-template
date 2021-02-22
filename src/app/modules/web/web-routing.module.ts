@@ -6,7 +6,7 @@ import { ProductsComponent } from './pages/products/products.component';
 import { ClientsComponent } from './pages/clients/clients.component';
 import { PartnersComponent } from './pages/partners/partners.component';
 import { NewsComponent } from './pages/news/news.component';
-import { ContactsComponent } from './components/contacts/contacts.component';
+import { ContactsPageComponent } from './pages/contacts/contacts-page.component';
 import { PrivacyPoliciesComponent } from './pages/privacy-policies/privacy-policies.component';
 import { LegalTermsComponent } from './pages/legal-terms/legal-terms.component';
 import { RelatedSitesComponent } from './pages/related-sites/related-sites.component';
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'clients', component: ClientsComponent, },
   { path: 'partners', component: PartnersComponent, },
   { path: 'news', component: NewsComponent, },
-  { path: 'contacts', component: ContactsComponent, },
+  { path: 'contacts', component: ContactsPageComponent, },
   { path: 'privacy', component: PrivacyPoliciesComponent },
   { path: 'terms', component: LegalTermsComponent },
   { path: 'related', component: RelatedSitesComponent },

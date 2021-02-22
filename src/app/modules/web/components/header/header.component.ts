@@ -13,7 +13,6 @@ export class HeaderComponent implements OnInit {
   @Input() data: any;
   @Input() type: any;
 
-
   constructor(private _router: Router) { }
 
   // Configuracion Header - Slider

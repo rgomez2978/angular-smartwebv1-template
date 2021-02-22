@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientsComponent implements OnInit {
   headerInternList: any = [];
-  carouselListTestimonials: any = [];
+  contentClients: any = [];
 
   constructor() { }
 
@@ -22,132 +22,122 @@ export class ClientsComponent implements OnInit {
    * -------------------------------------------------------
    */
   initArray() {
-    this.headerInternList = [
-      {
-        hs_id: 1,
-        background: './assets/fondo_banner_intern.jpg',
-        image: './assets/clients/img_banner_clients2.png',
-        title: 'Nuestros',
-        title2: 'Clientes',
-        description: 'Fomentamos una estrecha colaboración con nuestros clientes para entender mejor sus objetivos y ofrecer una consultoría tecnológica que aporte un alto valor de negocio, aportando soluciones para mejorar procesos, gestionar, comunicar, vender y optimizar la rentabilidad de su negocio. ',
-        order: 1,
-        buttons: [
-          {
-            btn_id: 1,
-            type: 'active',
-            name: 'empezar',
-            link: '/privacy',
-            order: 1
-          },
-          {
-            btn_id: 2,
-            type: 'normal',
-            name: 'demostración',
-            link: '/related',
-            order: 2
-          },
-        ],
-      }
-    ];
 
-    this.carouselListTestimonials = [
-      {
-        cst_id: 1,
-        icon: {
-          name: 'far fa-quote-left',
-          size: 'text-4xl ',
+    this.contentClients = [{
+      header: [
+        {
+          hs_id: 1,
+          background: './assets/fondo_banner_intern.jpg',
+          image: './assets/clients/img_banner_clients2.png',
+          title: 'Nuestros',
+          title2: 'Clientes',
+          description: 'Fomentamos una estrecha colaboración con nuestros clientes para entender mejor sus objetivos y ofrecer una consultoría tecnológica que aporte un alto valor de negocio, aportando soluciones para mejorar procesos, gestionar, comunicar, vender y optimizar la rentabilidad de su negocio. ',
+          order: 1,
+          buttons: [],
+        }
+      ],
+      clientes: [],
+      testimonials: [
+        {
+          cst_id: 1,
+          icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+          },
+          sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+          },
+          sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+          },
+          order: 1
         },
-        sumary: {
-          description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
-          size: 'text-md',
+        {
+          cst_id: 2,
+          icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+          },
+          sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+          },
+          sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+          },
+          order: 2
         },
-        sign: {
-          description: 'Jhon Dhoe',
-          size: 'text-sm',
+        {
+          cst_id: 3,
+          icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+          },
+          sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+          },
+          sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+          },
+          order: 3
         },
-        order: 1
-      },
-      {
-        cst_id: 2,
-        icon: {
-          name: 'far fa-quote-left',
-          size: 'text-4xl ',
+        {
+          cst_id: 4,
+          icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+          },
+          sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+          },
+          sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+          },
+          order: 4
         },
-        sumary: {
-          description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
-          size: 'text-md',
+        {
+          cst_id: 5,
+          icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+          },
+          sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+          },
+          sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+          },
+          order: 5
         },
-        sign: {
-          description: 'Jhon Dhoe',
-          size: 'text-sm',
+        {
+          cst_id: 6,
+          icon: {
+            name: 'far fa-quote-left',
+            size: 'text-4xl ',
+          },
+          sumary: {
+            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
+            size: 'text-md',
+          },
+          sign: {
+            description: 'Jhon Dhoe',
+            size: 'text-sm',
+          },
+          order: 6
         },
-        order: 2
-      },
-      {
-        cst_id: 3,
-        icon: {
-          name: 'far fa-quote-left',
-          size: 'text-4xl ',
-        },
-        sumary: {
-          description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
-          size: 'text-md',
-        },
-        sign: {
-          description: 'Jhon Dhoe',
-          size: 'text-sm',
-        },
-        order: 3
-      },
-      {
-        cst_id: 4,
-        icon: {
-          name: 'far fa-quote-left',
-          size: 'text-4xl ',
-        },
-        sumary: {
-          description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
-          size: 'text-md',
-        },
-        sign: {
-          description: 'Jhon Dhoe',
-          size: 'text-sm',
-        },
-        order: 4
-      },
-      {
-        cst_id: 5,
-        icon: {
-          name: 'far fa-quote-left',
-          size: 'text-4xl ',
-        },
-        sumary: {
-          description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
-          size: 'text-md',
-        },
-        sign: {
-          description: 'Jhon Dhoe',
-          size: 'text-sm',
-        },
-        order: 5
-      },
-      {
-        cst_id: 6,
-        icon: {
-          name: 'far fa-quote-left',
-          size: 'text-4xl ',
-        },
-        sumary: {
-          description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna dsadas sdas sad asdasd assadas dsadasdasd.',
-          size: 'text-md',
-        },
-        sign: {
-          description: 'Jhon Dhoe',
-          size: 'text-sm',
-        },
-        order: 6
-      },
-    ];
+      ],
+    }];
+
+
   }
 
 

@@ -1,11 +1,11 @@
 <div class="flex flex-col justify-between min-h-screen">
     <div class="flex flex-col flex-1">
-        <app-navbar [data]="navbarList"></app-navbar>
+        <app-navbar [data]="contenLayout[0].navbar"></app-navbar>
         <div class="">
             <router-outlet></router-outlet>
         </div>
     </div>
     <div class="w-full h-40">
-        <app-footer [data]="footerList"></app-footer>
+        <app-footer [data]="contenLayout[0].footer"></app-footer>
     </div>
 </div>

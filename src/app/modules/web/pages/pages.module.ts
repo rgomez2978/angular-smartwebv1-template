@@ -12,7 +12,7 @@ import { ProductsComponent } from './products/products.component';
 import { ClientsComponent } from './clients/clients.component';
 import { PartnersComponent } from './partners/partners.component';
 import { NewsComponent } from './news/news.component';
-import { ContactsComponent } from './contacts/contacts.component';
+import { ContactsPageComponent } from './contacts/contacts-page.component';
 import { ComponentsModule } from '../components/components.module';
 import { PrivacyPoliciesComponent } from './privacy-policies/privacy-policies.component';
 import { LegalTermsComponent } from './legal-terms/legal-terms.component';
@@ -29,7 +29,7 @@ import { SiteMapComponent } from './site-map/site-map.component';
     ClientsComponent,
     PartnersComponent,
     NewsComponent,
-    ContactsComponent,
+    ContactsPageComponent,
     PrivacyPoliciesComponent,
     LegalTermsComponent,
     RelatedSitesComponent,
@@ -50,7 +50,7 @@ import { SiteMapComponent } from './site-map/site-map.component';
     ClientsComponent,
     PartnersComponent,
     NewsComponent,
-    ContactsComponent,
+    ContactsPageComponent,
     PrivacyPoliciesComponent,
     LegalTermsComponent,
     RelatedSitesComponent,
