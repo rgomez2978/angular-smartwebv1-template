@@ -43,8 +43,8 @@
     <div class="transform scale-75 lg:scale-90 swiper-button-next swiper-button-white"></div>
     <div class="transform scale-75 lg:scale-90 swiper-button-prev swiper-button-white"></div>
 </swiper>
-<!-- FIN // HEADER - SLIDER -->
 
+<!-- HEADER - INTERN -->
 <section class="bg-cover" *ngIf="type === 'intern'"
     [ngStyle]="{ 'background-image': 'url(' + data[0].background + ')'}">
     <div class="flex flex-row w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80">
@@ -76,6 +76,51 @@
                 </div>
             </section>
             <img [src]="data[0].image" class="hidden sm:block sm:h-full">
+        </article>
+    </div>
+</section>
+
+<!-- HEADER - CONTACTS -->
+<section class="bg-cover" *ngIf="type === 'contacts'"
+    [ngStyle]="{ 'background-image': 'url(' + data[0].background + ')'}">
+    <div class="flex flex-row w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80">
+        <article class="flex flex-row items-center justify-start w-full h-full px-5 py-2 lg:px-10">
+            <section class="flex flex-col items-start justify-center w-full h-auto pl-4 sm:px-0 sm:pr-4 md:pr-5 lg:pr-20">
+                <div
+                    class="flex flex-row items-center justify-start w-full -mb-1 text-2xl font-black uppercase sm:mb-1 md:mb-1 lg:mb-2 sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl">
+                    <h1 class="w-auto text-white ">
+                        {{ data[0].title}}
+                    </h1>
+                    <h1 class="w-auto text-smart-700" [ngClass]="words === 1 ?'pl-0':'pl-3'">
+                        {{ data[0].title2}}
+                    </h1>
+                </div>
+                <p
+                    class="flex px-0 mb-2 text-sm font-normal text-justify text-white md:mb-4 line-clamp-4 md:line-clamp-none sm:p-0 sm:text-sm md:text-sm lg:text-xl xl:text-2xl">
+                    {{ data[0].description}}
+                </p>
+                <div *ngFor="let itemCont of data[0].contact; let i = index"
+                    class="flex flex-row items-center justify-start w-full pr-0 ml-0 space-x-0 text-xs font-bold md:space-x-4">
+                    <div class="flex flex-col h-auto pr-6 sm:pr-4 lg:pr-10">
+                        <div *ngFor="let itemContEmail of itemCont.emails; let j = index" class="flex flex-row justify-start h-auto text-sm font-normal text-white items sm:text-sm md:text-sm lg:text-base xl:text-lg">
+                            <div class="pr-2">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <p> {{ itemContEmail.description }}</p>
+                        </div>
+                        <app-socials class="mt-1" [data]="itemCont.socials" [color]="'white'" [size]="'text-sm sm:text-sm md:text-sm lg:text-base xl:text-lg'"  [space]="'space-x-5'"></app-socials>
+                    </div>
+                    <div class="flex flex-col h-auto pr-0 ">
+                        <div *ngFor="let itemContEmail of itemCont.phones; let j = index" class="flex flex-row justify-start h-auto text-sm font-normal text-white items sm:text-sm md:text-sm lg:text-base xl:text-lg">
+                            <div class="pr-2">
+                                <i class="fas fa-phone-square-alt"></i>
+                            </div>
+                            <p> +{{ itemContEmail.cod_country }} ({{ itemContEmail.cod_area }}) {{ itemContEmail.number }}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <img [src]="data[0].image" class="hidden sm:block sm:h-36 md:h-48 lg:h-56 xl:h-64">
         </article>
     </div>
 </section>

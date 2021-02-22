@@ -39,13 +39,11 @@
       <!-- </div> -->
     </nav>
   </div>
-  <!-- FIN // Menu normal -->
   <!--Search-->
   <div class="relative hidden w-full mt-2 bg-white shadow-lg" id="search-content">
     <input id="searchfield" type="search" placeholder="Buscar..." autofocus="autofocus"
       class="w-full p-2 text-sm leading-normal text-gray-500 transition appearance-none focus:outline-none focus:border-transparent lg:text-xl">
   </div>
-  <!--FIN // Search-->
 
 
   <!-- MENU MOBILE -->
@@ -57,7 +55,6 @@
       <div class="inset-0 bg-gray-900 bg-opacity-75 " (click)="toggleMenuMobile()"
         [ngClass]="menuMobile?'absolute': 'flex'">
       </div>
-      <!-- FIN // OVerlay -->
 
       <!-- Menu -->
       <section class="transition duration-300 transform "
@@ -83,7 +80,6 @@
                       </path>
                     </svg>
                   </button>
-                  <!-- FIN // Boton cerrar -->
                 </div>
               </div>
             </header>
@@ -102,11 +98,8 @@
                     </li>
                   </ul>
                 </div>
-                <!-- FIN // Menu de opciones -->
               </div>
             </div>
-            <!-- FIN // Contenido del Menu  -->
-            <!-- Footer menu -->
             <div class="flex flex-col items-center justify-center mt-auto">
               <div class="flex flex-col w-full pt-6 mt-4 mb-5 border-t border-gray-100">
                 <a class="block px-4 py-3 mb-3 text-sm font-semibold leading-none text-center text-white rounded bg-smart-300 hover:bg-smart-400"
@@ -114,7 +107,7 @@
                 <a class="block px-4 py-3 mb-2 text-sm font-semibold leading-none text-center bg-white border rounded text-smart-300 border-smart-300 hover:bg-smart-200 hover:text-white hover:border-smart-200"
                   href="#">Registrar cuenta</a>
               </div>
-              <app-socials [data]="iconSocials" [color]="'smart-300'" [size]="'text-2xl'"  [space]="'2'"></app-socials>
+              <app-socials [data]="iconSocials" [color]="'smart-300'" [size]="'text-2xl'"  [space]="'space-x-5'"></app-socials>
             </div>
           </div>
         </div>
