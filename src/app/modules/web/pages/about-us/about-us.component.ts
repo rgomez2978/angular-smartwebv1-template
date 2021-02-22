@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
   headerInternList: any = [];
+  ctaList: any = [];
 
   constructor() { }
 
@@ -49,6 +50,50 @@ export class AboutUsComponent implements OnInit {
         ],
       }
     ];
+
+    this.ctaList = [
+      {
+        cta_id: 1,
+        location:'left',
+        title: 'Misión',
+        description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+        background: '',
+        image: './assets/aboutus/mision.png',
+        order:1,
+        features: [],
+        buttons: [
+
+        ],
+      },
+      {
+        cta_id: 2,
+        location:'right',
+        title: 'Visión',
+        description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+        background: '',
+        image: './assets/aboutus/vision.png',
+        order:2,
+        features: [],
+        buttons: [
+          {
+            btn_id: 1,
+            type: 'active',
+            name: 'boton 1',
+            link: '',
+            order: 1
+          },
+          {
+            btn_id: 2,
+            type: 'normal',
+            name: 'boton 2',
+            link: '',
+            order: 2
+
+          },
+        ],
+      },
+    ];
+
   }
 
 
