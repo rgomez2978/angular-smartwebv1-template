@@ -18,6 +18,8 @@ import { ServicesComponent } from './services/services.component';
 import { NewsComponent } from './news/news.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { LoadingComponent } from './loading/loading.component';
+import { TitleHeaderComponent } from './title-header/title-header.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 
 
@@ -39,6 +41,8 @@ import { LoadingComponent } from './loading/loading.component';
     NewsComponent,
     ContactsComponent,
     LoadingComponent,
+    TitleHeaderComponent,
+    BreadcrumbComponent,
 
   ],
   imports: [
@@ -61,7 +65,8 @@ import { LoadingComponent } from './loading/loading.component';
     ServicesComponent,
     NewsComponent,
     ContactsComponent,
-    LoadingComponent
+    LoadingComponent,
+    TitleHeaderComponent
   ]
 })
 export class ComponentsModule { }

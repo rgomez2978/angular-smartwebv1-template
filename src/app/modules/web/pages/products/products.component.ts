@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
   headerInternList: any = [];
+  carouselListService: any = [];
 
   constructor() { }
 
@@ -48,6 +49,112 @@ export class ProductsComponent implements OnInit {
         ],
       }
     ];
+
+    this.carouselListService = [
+      {
+          cs_id: 1,
+          icon: {
+              name: 'fab fa-app-store',
+              size: 'text-2xl ',
+          },
+          header: {
+              title: 'Servicio 1',
+              size: 'text-xl',
+              link: '',
+          },
+          sumary: {
+              description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodsadsdasd asdasdas dsadas sdas sad asdasd assadas dsadasdasd.',
+              size: 'text-md',
+          },
+          order: 1
+      },
+      {
+          cs_id: 2,
+          icon: {
+              name: 'far fa-laptop-code',
+              size: 'text-2xl ',
+          },
+          header: {
+              title: 'Servicio 2',
+              size: 'text-xl',
+              link: '',
+          },
+          sumary: {
+              description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodsadsdasd asdasdas dsadas sdas sad asdasd assadas dsadasdasd.',
+              size: 'text-md',
+          },
+          order: 2
+      },
+      {
+          cs_id: 3,
+          icon: {
+              name: 'far fa-tools',
+              size: 'text-2xl ',
+          },
+          header: {
+              title: 'Servicio 3',
+              size: 'text-xl',
+              link: '',
+          },
+          sumary: {
+              description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodsadsdasd asdasdas dsadas sdas sad asdasd assadas dsadasdasd.',
+              size: 'text-md',
+          },
+          order: 3
+      },
+      {
+          cs_id: 4,
+          icon: {
+              name: 'far fa-network-wired',
+              size: 'text-2xl ',
+          },
+          header: {
+              title: 'Servicio 4',
+              size: 'text-xl',
+              link: '',
+          },
+          sumary: {
+              description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodsadsdasd asdasdas dsadas sdas sad asdasd assadas dsadasdasd.',
+              size: 'text-md',
+          },
+          order: 4
+      },
+      {
+          cs_id: 5,
+          icon: {
+              name: 'far fa-grip-horizontal',
+              size: 'text-2xl ',
+          },
+          header: {
+              title: 'Servicio 5',
+              size: 'text-xl',
+              link: '',
+          },
+          sumary: {
+              description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodsadsdasd asdasdas dsadas sdas sad asdasd assadas dsadasdasd.',
+              size: 'text-md',
+          },
+          order: 5
+      },
+      {
+          cs_id: 6,
+          icon: {
+              name: 'far fa-window-restore',
+              size: 'text-2xl ',
+          },
+          header: {
+              title: 'Servicio 6',
+              size: 'text-xl',
+              link: '',
+          },
+          sumary: {
+              description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodsadsdasd asdasdas dsadas sdas sad asdasd assadas dsadasdasd.',
+              size: 'text-md',
+          },
+          order: 6
+      },
+  ];
+
   }
 
 }
