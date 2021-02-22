@@ -55,7 +55,7 @@
                     <h1 class="w-auto text-white ">
                         {{ data[0].title}}
                     </h1>
-                    <h1 class="w-auto pl-3 text-smart-700 ">
+                    <h1 class="w-auto text-smart-700" [ngClass]="words === 1 ?'pl-0':'pl-3'">
                         {{ data[0].title2}}
                     </h1>
                 </div>

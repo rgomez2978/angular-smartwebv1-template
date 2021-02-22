@@ -21,7 +21,7 @@ export class ContactsPageComponent implements OnInit {
         {
           hs_id: 1,
           background: './assets/fondo_banner_intern.jpg',
-          image: './assets/news/img_banner_news.png',
+          image: './assets/contacts/img_banner_contacts3.jpg',
           gmap: [
 
           ],

@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
 
   @Input() data: any;
   @Input() type: any;
+  @Input() words: any;
 
   constructor(private _router: Router) { }
 
