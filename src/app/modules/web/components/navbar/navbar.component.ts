@@ -13,7 +13,8 @@ export class NavbarComponent implements OnInit {
   dataNavbar: string;
   urlActive: string;
   menu = false;
-  menuMobile = false;
+  menuMobile = true;
+  menuSearch = false;
   application = 'blue';
 
   constructor(
@@ -35,6 +36,9 @@ export class NavbarComponent implements OnInit {
     this.menuMobile = !this.menuMobile;
   }
 
+  toggleSearch() {
+    this.menuSearch = !this.menuSearch;
+  }
 
   /**
    * -------------------------------------------------------

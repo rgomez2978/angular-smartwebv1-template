@@ -1,6 +1,6 @@
 <section class="fixed inset-0 z-50 w-full h-16 bg-white xl:bg-contain">
   <!-- Menu normal -->
-  <div class="flex items-center justify-center w-full h-16 px-4 shadow-md">
+  <div class="z-50 flex items-center justify-center w-full h-16 px-4 bg-white shadow-md md:relative">
     <nav *ngFor="let item of dataNavbar; let i = index" class="flex items-center justify-between w-full ">
       <div class="mt-1">
         <a class="text-3xl font-semibold leading-none" href="#">
@@ -26,7 +26,7 @@
       </ul>
 
       <!-- Boton de busqueda -->
-      <button
+      <button (click)="toggleSearch()"
         class="hidden p-1 text-smart-300 md:block md:mt-1 hover:text-smart-300 focus:outline-none focus:ring-2 focus:ring-white">
         <i class="text-xl lg:text-xl fas fa-search"></i>
       </button>
@@ -36,18 +36,25 @@
         class="hidden px-2 py-2 ml-2 text-xs font-medium text-white uppercase transform scale-90 rounded bg-smart-300 md:block dark:bg-smart-400 hover:bg-smart-400 dark:hover:bg-smart-400 focus:outline-none focus:bg-smart-400 dark:focus:bg-smart-400">
         INGRESAR
       </button>
-      <!-- </div> -->
+
+
     </nav>
   </div>
+
+
   <!--Search-->
-  <div class="relative hidden w-full mt-2 bg-white shadow-lg" id="search-content">
-    <input id="searchfield" type="search" placeholder="Buscar..." autofocus="autofocus"
-      class="w-full p-2 text-sm leading-normal text-gray-500 transition appearance-none focus:outline-none focus:border-transparent lg:text-xl">
+  <div [ngClass]="!menuSearch? 'relative translate-y-0 ease-in': 'relative flex translate-y-full ease-out'"
+    class="inset-0 z-10 justify-end hidden w-full -mt-12 transition duration-300 transform md:flex md:pr-5"
+    id="search-content">
+    <div class="w-2/5 h-auto px-4 bg-white rounded-b-lg shadow-xl md:relative ">
+      <input id="searchfield" type="search" placeholder="Buscar..." autofocus="autofocus"
+        class="w-full p-2 text-sm leading-normal text-gray-500 transition appearance-none focus:outline-none focus:border-transparent lg:text-lg">
+    </div>
   </div>
 
 
   <!-- MENU MOBILE -->
-  <div class="z-50 flex flex-col justify-between md:hidden cont-sidebar"
+  <div class="z-20 flex flex-col justify-between md:hidden cont-sidebar"
     [ngClass]="menuMobile ?'fixed inset-0' : 'block'">
 
     <div class="inset-0 overflow-hidden " [ngClass]="menuMobile? 'inset-0 absolute': 'block'">
@@ -74,8 +81,8 @@
                   <!-- Boton cerrar -->
                   <button (click)="toggleMenuMobile()"
                     class="flex items-center px-1 py-1 border-2 rounded outline-none cursor-pointer border-smart-300 text-smart-300 navbar-burger hover:text-white hover:bg-smart-300">
-                    <svg class="w-6 h-6"
-                      xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                      stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
                       </path>
                     </svg>
@@ -84,6 +91,16 @@
               </div>
             </header>
             <!-- Header del Menu  -->
+
+            <div class="relative mt-2 mb-4 text-gray-400">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                <i class="text-gray-400 fas fa-search"></i>
+              </span>
+              <input type="text"
+                class="w-full py-2 pl-10 pr-4 font-normal text-gray-400 bg-white border border-gray-300 rounded-md focus:border-blue-300 dark:focus:border-blue-400 focus:outline-none focus:ring"
+                placeholder="Search">
+            </div>
+
             <!-- Contenido del Menu  -->
             <div class="relative flex-1">
               <div class="absolute inset-0 flex flex-col justify-between bg-white sm:flex cont-sidebar">
@@ -107,7 +124,8 @@
                 <a class="block px-4 py-3 mb-2 text-sm font-semibold leading-none text-center bg-white border rounded text-smart-300 border-smart-300 hover:bg-smart-200 hover:text-white hover:border-smart-200"
                   href="#">Registrar cuenta</a>
               </div>
-              <app-socials [data]="iconSocials" [color]="'smart-300'" [size]="'text-2xl'"  [space]="'space-x-5'"></app-socials>
+              <app-socials [data]="iconSocials" [color]="'smart-300'" [size]="'text-2xl'" [space]="'space-x-5'">
+              </app-socials>
             </div>
           </div>
         </div>
