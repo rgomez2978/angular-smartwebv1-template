@@ -46,7 +46,7 @@ export class ProductsComponent implements OnInit {
                         title2: 'smartconnect',
                         description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
                         background: '',
-                        image: './assets/aboutus/vision.png',
+                        image: './assets/products/promotions/banner_promo_img.png',
                         order: 1,
                         features: [
                             {
