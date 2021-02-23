@@ -8,12 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CallToActionComponent implements OnInit {
 
   @Input() data: any;
-  @Input() location: string;
   @Input() type: string;
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

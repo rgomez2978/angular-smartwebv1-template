@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit {
           {
             hs_id: 2,
             background: './assets/fondo_banner.jpg',
-            image: './assets/fondo_banner_img.png',
+            image: '',
             title: 'Soluciones rápidas',
             title2: '¡para tu negocio2!',
             description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo invidunt ut labore.',

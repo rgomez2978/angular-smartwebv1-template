@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
     slidesPerView: 1,
     spaceBetween: 0,
     autoplay: {
-      delay: 3000,
+      delay: 6500,
       disableOnInteraction: true
     },
     navigation: {

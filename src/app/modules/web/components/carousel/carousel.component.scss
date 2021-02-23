@@ -1,0 +1,12 @@
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none !important;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  left: auto;
+  right: 10px;
+  top: 92% !important;
+}

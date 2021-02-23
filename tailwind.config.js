@@ -46,6 +46,7 @@ module.exports = {
         500: "#003399",
         600: "#102f4f",
         700: "#FFED00",
+        800: "#FDBA00",
       },
       smartgradient: {
         100: "#66C1FB",

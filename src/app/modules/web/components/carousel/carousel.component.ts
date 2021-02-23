@@ -68,6 +68,33 @@ export class CarouselComponent implements OnInit {
     },
   };
 
+  // Configuracion carousel - Promotions
+  configCarouselPromotions: SwiperOptions = {
+    direction: 'horizontal',
+    preventClicks: false,
+    speed: 500,
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: true
+    // },
+    loop: true,
+    // freeMode: true,
+    initialSlide: 0,
+    autoHeight: true,
+    centeredSlides: false,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+  };
+
+
   // Configuracion carousel - Servicios
   configCarouselService: SwiperOptions = {
     direction: 'horizontal',
