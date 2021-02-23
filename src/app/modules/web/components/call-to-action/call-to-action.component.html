@@ -54,35 +54,40 @@
     <div *ngFor="let item of data; let i=index">
         <div class="flex flex-row w-full h-full">
             <article
-                class="flex w-full h-full px-5 py-3 lg:px-10 from-smartgradient-800 to-smartgradient-700 bg-gradient-to-r"
-                [ngClass]="item.location === 'left' ? 'flex-col md:flex-row ':'flex-col md:flex-row-reverse'">
-                <section class="w-2/5 h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 ">
+                class="flex flex-col w-full h-full px-5 py-3 sm:h-full md:h-72 lg:h-72 xl:h-80 lg:px-10 from-smartgradient-800 to-smartgradient-700 bg-gradient-to-r"
+                [ngClass]="item.location === 'left' ? 'md:flex-row ':'md:flex-row-reverse'">
+                <section class="w-full mb-5 h-36 sm:h-52 md:mb-0 md:h-full md:w-2/5">
                     <app-carousel [data]="item.carousel" [type]="'promotions'"></app-carousel>
                 </section>
-                <section class="flex flex-col items-start justify-start w-3/5 h-48 pl-10 sm:h-56 md:h-64 lg:h-72 xl:h-80">
-                    <div
-                        class="flex flex-row items-center justify-start w-full mb-0 text-2xl font-black uppercase sm:mb-1 md:mb-1 lg:mb-2 sm:text-xl md:text-2xl lg:text-4xl xl:text-4xl">
-                        <h1 class="w-auto pr-3 text-white">
-                            {{ item.title}}
-                        </h1>
-                        <h1 class="w-auto text-smart-800 ">
-                            {{ item.title2}}
-                        </h1>
+                <section
+                    class="flex-col items-start justify-start flex-1 h-auto pl-0 md:pl-4 lg:pl-10 sm:h-auto md:h-64 lg:h-72 xl:h-80">
+                    <div class="">
+                        <div
+                            class="flex flex-row flex-wrap items-center justify-start w-full h-auto mb-0 text-2xl font-black uppercase sm:mb-1 md:mb-1 lg:mb-2 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                            <h1 class="w-auto pr-3 text-white">
+                                {{ item.title}}
+                            </h1>
+                            <h1 class="w-auto text-smart-800 ">
+                                {{ item.title2}}
+                            </h1>
+                        </div>
+                        <p
+                            class="flex w-full h-auto px-0 mb-4 text-sm font-normal text-justify text-white md:line-clamp-none sm:p-0 sm:text-base md:text-base lg:text-base xl:text-xl">
+                            {{ item.description}}
+                        </p>
                     </div>
-                    <p
-                        class="flex w-full px-0 mb-0 text-sm font-normal text-justify text-white line-clamp-4 md:line-clamp-none sm:mb-2 md:mb-6 lg:mb-4 sm:p-0 sm:text-base md:text-base lg:text-xl xl:text-xl">
-                        {{ item.description}}
-                    </p>
+
                     <div *ngIf="item.features.length > 0"
-                        class="flex flex-row items-center justify-start w-full pl-6 pr-0 mt-0 ml-0 space-x-4 text-sm font-normal text-white sm:text-base md:text-base lg:text-base xl:text-base ">
-                        <ul class="w-4/5 space-y-2 ">
+                        class="flex flex-row items-center justify-start w-full h-full p-0 m-0 space-x-4 text-sm font-normal text-white sm:text-sm md:text-sm lg:text-base xl:text-base">
+                        <ul class="w-full h-full pl-4 space-y-2 ">
                             <li *ngFor="let itemFeature of item.features; let i = index">
                                 <i class="{{itemFeature.icon.name}} text-white mr-2"></i>
                                 <span> {{ itemFeature.description }}</span>
                             </li>
                         </ul>
-                        <div class="flex justify-end right-10 ">
-                            <img [src]="item.image" class="absolute right-0 md:-mt-24 lg:-mt-24 xl:-mt-20 md:h-36 lg:h-40 xl:h-48 ">
+                        <div
+                            class="flex-row items-start justify-start hidden w-2/5 h-full py-3 lg:flex xl:px-0 xl:py-0">
+                            <img [src]="item.image" class="object-contain">
                         </div>
                     </div>
                     <div *ngIf="item.buttons.length > 0"
@@ -95,7 +100,6 @@
                             </div>
                         </div>
                     </div>
-
                 </section>
             </article>
         </div>

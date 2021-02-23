@@ -72,7 +72,7 @@ export class CarouselComponent implements OnInit {
   configCarouselPromotions: SwiperOptions = {
     direction: 'horizontal',
     preventClicks: false,
-    speed: 500,
+    speed: 900,
     // autoplay: {
     //   delay: 4000,
     //   disableOnInteraction: true

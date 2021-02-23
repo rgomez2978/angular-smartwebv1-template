@@ -20,15 +20,15 @@
 
 
 <!-- CAROUSEL - PROMOTIONS -->
-<swiper [config]="configCarouselPromotions" class="relative w-full h-full swiper-container gallery-top" *ngIf="type === 'promotions'">
+<swiper [config]="configCarouselPromotions" class="relative w-full h-full border-2 border-gray-100 shadow-xl swiper-container gallery-top" *ngIf="type === 'promotions'">
     <!-- slide content -->
-    <div class="flex flex-row w-full sm:h-56 md:h-64 lg:h-72 xl:h-80 swiper-wrapper">
+    <div class="flex flex-row w-full h-full swiper-wrapper">
         <!-- slide -->
-        <div class="swiper-slide"
-            *ngFor="let item of data">
-            <article class="">
-                <img *ngIf="item.image !== ''" [src]="item.image" class="">
-            </article>
+        <div class="h-full bg-cover swiper-slide"
+            *ngFor="let item of data"  [ngStyle]="{ 'background-image': 'url(' + item.image + ')'}">
+            <!-- <article class=""> -->
+                <!-- <img *ngIf="item.image !== ''" [src]="item.image" class="object-scale-down"> -->
+            <!-- </article> -->
         </div>
     </div>
     <!-- Pagination -->

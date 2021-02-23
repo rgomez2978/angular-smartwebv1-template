@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   dataNavbar: string;
   urlActive: string;
   menu = false;
-  menuMobile = true;
+  menuMobile = false;
   menuSearch = false;
   application = 'blue';
 
