@@ -1,5 +1,5 @@
 <!-- CAROUSEL - CLIENTS -->
-<swiper [config]="configCarouselClient" class="mt-5 mb-5 swiper-container" *ngIf="type === 'clients'">
+<swiper [config]="configCarouselClient" class="py-8 swiper-container" *ngIf="type === 'clients'">
     <!-- slide content -->
     <div class="flex flex-row h-24 py-5 swiper-wrapper">
         <!-- slide -->
@@ -19,32 +19,8 @@
 </swiper>
 
 
-<!-- CAROUSEL - PROMOTIONS -->
-<swiper [config]="configCarouselPromotions" class="relative w-full h-full border-2 border-gray-100 shadow-xl swiper-container gallery-top" *ngIf="type === 'promotions'">
-    <!-- slide content -->
-    <div class="flex flex-row w-full h-full swiper-wrapper">
-        <!-- slide -->
-        <div class="h-full bg-cover swiper-slide"
-            *ngFor="let item of data"  [ngStyle]="{ 'background-image': 'url(' + item.image + ')'}">
-            <!-- <article class=""> -->
-                <!-- <img *ngIf="item.image !== ''" [src]="item.image" class="object-scale-down"> -->
-            <!-- </article> -->
-        </div>
-    </div>
-    <!-- Pagination -->
-    <!-- <div class="swiper-pagination"></div> -->
-    <!-- Arrows -->
-    <div class="absolute z-10 flex items-center w-8 h-8 text-4xl transform scale-75 bg-white rounded-full lg:scale-90 swiper-button-next text-smart-200">
-        <i class="fas fa-chevron-circle-right"></i>
-    </div>
-    <div class="absolute z-10 w-8 h-8 text-4xl transform scale-75 bg-white rounded-full text-smart-200 right-14 lg:scale-90 swiper-button-prev ">
-        <i class="fas fa-chevron-circle-left"></i>
-    </div>
-</swiper>
-
-
 <!-- CAROUSEL - SERVICES  -->
-<swiper [config]="configCarouselService" class="mt-5 mb-5 swiper-container" *ngIf="type === 'services'">
+<swiper [config]="configCarouselService" class="py-8 swiper-container" *ngIf="type === 'services'">
     <!-- slide content -->
     <div class="flex flex-row h-32 py-5 swiper-wrapper">
         <!-- slide -->
@@ -77,12 +53,10 @@
     <div class="-mt-6 transform scale-75 xl:scale-75 swiper-button-next"></div>
     <div class="-mt-6 transform scale-75 xl:scale-75 swiper-button-prev"></div>
 </swiper>
-<!-- FIN // CAROUSEL - SERVICES -->
-
 
 
 <!-- CAROUSEL - TESTIMONIALS  -->
-<swiper [config]="configCarouselTestimonial" class="mt-5 mb-5 swiper-container" *ngIf="type === 'testimonials'">
+<swiper [config]="configCarouselTestimonial" class="py-8 swiper-container" *ngIf="type === 'testimonials'">
     <!-- slide content -->
     <div class="flex flex-row py-5 h-36 swiper-wrapper">
         <!-- slide -->
@@ -124,4 +98,28 @@
     <div class="-mt-6 transform scale-75 xl:scale-75 swiper-button-next"></div>
     <div class="-mt-6 transform scale-75 xl:scale-75 swiper-button-prev"></div>
 </swiper>
-<!-- FIN // CAROUSEL - TESTIMONIALS -->
+
+
+<!-- CAROUSEL - PROMOTIONS -->
+<swiper [config]="configCarouselPromotions" class="relative w-full h-full border-2 border-gray-100 shadow-xl swiper-container gallery-top" *ngIf="type === 'promotions'">
+    <!-- slide content -->
+    <div class="flex flex-row w-full h-full swiper-wrapper">
+        <!-- slide -->
+        <div class="object-cover h-full swiper-slide "
+            *ngFor="let item of data"  [ngStyle]="{ 'background-image': 'url(' + item.image + ')'}">
+            <!-- <article class=""> -->
+                <!-- <img *ngIf="item.image !== ''" [src]="item.image" class="object-scale-down"> -->
+            <!-- </article> -->
+        </div>
+    </div>
+    <!-- Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+    <!-- Arrows -->
+    <div class="absolute z-10 flex items-center w-8 h-8 text-4xl transform scale-75 bg-white rounded-full lg:scale-90 swiper-button-next text-smart-200 swiper-prom-next">
+        <i class="fas fa-chevron-circle-right"></i>
+    </div>
+    <div class="absolute z-10 w-8 h-8 text-4xl transform scale-75 bg-white rounded-full text-smart-200 right-14 lg:scale-90 swiper-button-prev swiper-prom-prev">
+        <i class="fas fa-chevron-circle-left"></i>
+    </div>
+</swiper>
+

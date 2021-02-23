@@ -1,4 +1,4 @@
-<section class="flex flex-col w-full h-full" *ngIf="type === 'normal'">
+<section class="flex flex-col py-8 " *ngIf="type === 'normal'">
     <div *ngFor="let item of data; let i=index">
         <div class="flex flex-row w-full h-auto">
             <article class="flex items-center justify-between w-full h-full px-5 py-2 lg:px-10"
@@ -7,7 +7,7 @@
                     [ngClass]="item.location === 'left' ? 'pr-0 md:pr-2 lg:pr-0 xl:pr-5':'pl-0 md:pr-2 lg:pl-0 xl:pl-5'">
                 <section class="flex flex-col items-start justify-center w-full h-full sm:px-0">
                     <div
-                        class="flex flex-row items-center justify-start w-full mb-0 text-2xl font-black capitalize sm:mb-1 md:mb-1 lg:mb-2 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                        class="flex flex-row items-center justify-start w-full mb-0 text-xl font-black capitalize sm:mb-1 md:mb-1 lg:mb-2 sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">
                         <h1 class="w-auto text-smart-300 ">
                             {{ item.title}}
                         </h1>
@@ -50,7 +50,7 @@
 </section>
 
 
-<section class="flex flex-col" *ngIf="type === 'promotions'">
+<section class="flex flex-col py-8" *ngIf="type === 'promotions'">
     <div *ngFor="let item of data; let i=index">
         <div class="flex flex-row w-full h-full">
             <article
