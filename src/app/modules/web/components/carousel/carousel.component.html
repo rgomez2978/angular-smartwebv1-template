@@ -1,12 +1,11 @@
 <!-- CAROUSEL - CLIENTS -->
-<swiper [config]="configCarouselClient" class="py-8 swiper-container" *ngIf="type === 'clients'">
+<swiper [config]="configCarouselClient" class="swiper-container" *ngIf="type === 'clients'">
     <!-- slide content -->
-    <div class="flex flex-row h-24 py-5 swiper-wrapper">
+    <div class="swp-clients swiper-wrapper">
         <!-- slide -->
-        <div class="flex items-center justify-center h-full px-16 swiper-slide" *ngFor="let item of data">
+        <div class="swp-full swiper-slide swp-slide-clients" *ngFor="let item of data">
             <!-- card  -->
-            <article
-                class="flex flex-row items-center justify-start w-full h-full p-8 overflow-hidden bg-gray-100 border-2 border-gray-300 shadow-sm opacity-80 ">
+            <article class="swp-row-start swp-card-flat swp-clients-scard ">
                 <img [src]="item.image" class="" />
             </article>
         </div>
@@ -14,112 +13,96 @@
     <!-- Pagination -->
     <!-- <div class="swiper-pagination"></div> -->
     <!-- Arrows -->
-    <div class="-mt-6 transform scale-75 xl:scale-75 swiper-button-next"></div>
-    <div class="-mt-6 transform scale-75 xl:scale-75 swiper-button-prev"></div>
+    <div class="swp-btn swiper-button-next"></div>
+    <div class="swp-btn swiper-button-prev"></div>
 </swiper>
 
 
 <!-- CAROUSEL - SERVICES  -->
-<swiper [config]="configCarouselService" class="py-8 swiper-container" *ngIf="type === 'services'">
+<swiper [config]="configCarouselService" class="swiper-container" *ngIf="type === 'services'">
     <!-- slide content -->
-    <div class="flex flex-row h-32 py-5 swiper-wrapper">
+    <div class="swiper-wrapper swp-services">
         <!-- slide -->
-        <div class="flex items-center justify-center h-full px-12 swiper-slide" *ngFor="let item of data">
+        <div class="swiper-slide swp-slide-services" *ngFor="let item of data">
             <!-- card  -->
-            <article
-                class="flex flex-col items-start justify-start w-full h-full p-4 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-lg">
-                <header class="flex flex-row items-center justify-start w-full pb-1 leading-tight text-smart-200">
-                    <i class="{{ item.icon.size}} font-bold {{ item.icon.name}}"></i>
-                    <h2 class="pl-2 {{ item.header.size}} font-bold">
+            <article class="swp-card swp-col-start swp-services-scard">
+                <header class="swp-row-start swp-services-scard-header">
+                    <i class="{{ item.icon.size}} {{ item.icon.name}}"></i>
+                    <h2 class="{{ item.header.size}}">
                         {{ item.header.title}}
                     </h2>
                 </header>
-                <footer class="flex flex-col items-center justify-start w-full leading-5">
-                    <p class="w-full ml-0 font-bold text-justify text-gray-400 line-clamp-3  {{ item.sumary.size}}">
+                <div class="swp-services-scard-content">
+                    <p class="{{ item.sumary.size}}">
                         {{ item.sumary.description}}
                     </p>
-                    <!-- <div class="flex justify-end w-full">
-                        <a class="absolute ml-3 -mt-3 text-gray-500 hover:text-smart-200">
-                            <i class="fa fa-external-link-alt"></i>
-                        </a>
+                    <!-- <div>
+                        <a><i class="fa fa-external-link-alt"></i></a>
                     </div> -->
-                </footer>
+                </div>
             </article>
         </div>
     </div>
-    <!-- Pagination -->
-    <!-- <div class="swiper-pagination"></div> -->
     <!-- Arrows -->
-    <div class="-mt-6 transform scale-75 xl:scale-75 swiper-button-next"></div>
-    <div class="-mt-6 transform scale-75 xl:scale-75 swiper-button-prev"></div>
+    <div class="swiper-button-next swp-btn"></div>
+    <div class="swiper-button-prev swp-btn"></div>
 </swiper>
 
 
+
 <!-- CAROUSEL - TESTIMONIALS  -->
-<swiper [config]="configCarouselTestimonial" class="py-8 swiper-container" *ngIf="type === 'testimonials'">
+<swiper [config]="configCarouselTestimonial" class="swiper-container " *ngIf="type === 'testimonials'">
     <!-- slide content -->
-    <div class="flex flex-row py-5 h-36 swiper-wrapper">
+    <div class="swiper-wrapper swp-testimonial">
         <!-- slide -->
-        <div class="flex items-center justify-center h-full px-12 swiper-slide" *ngFor="let item of data">
+        <div class="swiper-slide swp-full swp-slide-testimonials" *ngFor="let item of data">
             <!-- card  -->
-            <article
-                class="flex flex-row items-center justify-start w-full h-full px-4 py-4 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-md">
+            <article class="swp-row-start swp-card swp-testimonials-scard">
                 <div class="h-full">
-                    <i class="{{ item.icon.size}} font-bold {{ item.icon.name}} text-gray-300 transform opacity-70"></i>
+                    <i class="{{ item.icon.size}} {{ item.icon.name}}"></i>
                 </div>
-                <div class="flex-1 h-full pl-2">
-                    <div class="flex flex-col h-full">
-                        <header class="flex-1 px-3 py-1 ">
-                            <div class="px-3 ">
-                                <div class="border-t border-gray-200"></div>
-                            </div>
-                            <div class="py-2 ">
-                                <p class="w-full ml-0 font-bold text-justify text-gray-400 line-clamp-3 {{ item.sumary.size}} italic">
-                                    {{ item.sumary.description}}
-                                </p>
-                            </div>
-                            <div class="px-3">
-                                <div class="border-b border-gray-200"></div>
-                            </div>
-                        </header>
-                        <footer class="flex justify-end h-2">
-                            <p class="font-bold text-smart-200 transform {{ item.sign.size}}">
-                                {{ item.sign.description}}
+                <div class="swp-testimonials-scard-header">
+                    <header>
+                        <div class="line-top"></div>
+                        <div class="py-2">
+                            <p class="{{ item.sumary.size}} ">
+                                {{ item.sumary.description}}
                             </p>
-                        </footer>
-                    </div>
+                        </div>
+                        <div class="line-bottom"></div>
+                    </header>
+                    <footer>
+                        <p class="{{ item.sign.size}}">
+                            {{ item.sign.description}}
+                        </p>
+                    </footer>
                 </div>
             </article>
         </div>
     </div>
-    <!-- Pagination -->
-    <!-- <div class="swiper-pagination"></div> -->
     <!-- Arrows -->
-    <div class="-mt-6 transform scale-75 xl:scale-75 swiper-button-next"></div>
-    <div class="-mt-6 transform scale-75 xl:scale-75 swiper-button-prev"></div>
+    <div class="swp-btn swiper-button-next"></div>
+    <div class="swp-btn swiper-button-prev"></div>
 </swiper>
 
 
 <!-- CAROUSEL - PROMOTIONS -->
-<swiper [config]="configCarouselPromotions" class="relative w-full h-full border-2 border-gray-100 shadow-xl swiper-container gallery-top" *ngIf="type === 'promotions'">
+<swiper [config]="configCarouselPromotions" class="swiper-container swp-cont-promo" *ngIf="type === 'promotions'">
     <!-- slide content -->
-    <div class="flex flex-row w-full h-full swiper-wrapper">
+    <div class="swiper-wrapper swp-promotions">
         <!-- slide -->
-        <div class="object-cover h-full swiper-slide "
-            *ngFor="let item of data"  [ngStyle]="{ 'background-image': 'url(' + item.image + ')'}">
-            <!-- <article class=""> -->
-                <!-- <img *ngIf="item.image !== ''" [src]="item.image" class="object-scale-down"> -->
-            <!-- </article> -->
+        <div class="swp-slide-promotions swiper-slide" *ngFor="let item of data">
+            <article class=" swp-promotions-scard">
+                <img *ngIf="item.image !== ''" [src]="item.image"
+                    class="absolute object-cover object-center w-full h-full">
+            </article>
         </div>
     </div>
-    <!-- Pagination -->
-    <!-- <div class="swiper-pagination"></div> -->
     <!-- Arrows -->
-    <div class="absolute z-10 flex items-center w-8 h-8 text-4xl transform scale-75 bg-white rounded-full lg:scale-90 swiper-button-next text-smart-200 swiper-prom-next">
+    <div class="swiper-button-next swp-btn-promo swp-btn-next">
         <i class="fas fa-chevron-circle-right"></i>
     </div>
-    <div class="absolute z-10 w-8 h-8 text-4xl transform scale-75 bg-white rounded-full text-smart-200 right-14 lg:scale-90 swiper-button-prev swiper-prom-prev">
+    <div class="swiper-button-prev swp-btn-promo swp-btn-prev">
         <i class="fas fa-chevron-circle-left"></i>
     </div>
 </swiper>
-

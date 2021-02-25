@@ -1,0 +1,170 @@
+.swiper-container {
+  @apply py-0;
+}
+
+.swiper-container.swp-cont-promo {
+  @apply relative w-full h-full border-2 border-gray-100 shadow-xl;
+}
+
+.swiper-container .swiper-wrapper {
+  @apply flex flex-row;
+}
+
+.swiper-container .swiper-wrapper.swp-clients {
+  @apply h-24 py-5;
+}
+
+.swiper-container .swiper-wrapper.swp-services {
+  @apply h-32 py-5;
+}
+
+.swiper-container .swiper-wrapper.swp-testimonial {
+  @apply py-5 h-36;
+}
+
+.swiper-container .swiper-wrapper.swp-promotions {
+  @apply w-full h-full;
+}
+
+.swiper-container .swp-card {
+  @apply w-full h-full p-8 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-lg;
+}
+
+.swiper-container .swp-card-flat {
+  @apply w-full h-full p-8 overflow-hidden bg-gray-100 border-2 border-gray-300 shadow-sm opacity-80;
+}
+
+.swiper-container .swp-full {
+  @apply flex justify-start;
+}
+
+.swiper-container .swp-row-start {
+  @apply flex flex-row items-center justify-start;
+}
+
+.swiper-container .swp-col-start {
+  @apply flex flex-col items-start justify-start;
+}
+
+.swiper-container .swp-slide-clients {
+  @apply h-full px-16;
+}
+
+.swiper-container .swp-slide-clients .swp-clients-scard {
+  @apply p-10 object-cover object-center;
+}
+
+.swiper-container .swp-slide-services {
+  @apply h-full px-12;
+}
+
+.swiper-container .swp-slide-services .swp-services-scard {
+  @apply p-4;
+}
+
+.swiper-container .swp-slide-services .swp-services-scard .swp-services-scard-header {
+  @apply w-full pb-1 leading-tight text-smart-200;
+}
+
+.swiper-container .swp-slide-services .swp-services-scard .swp-services-scard-header i {
+  @apply font-bold;
+}
+
+.swiper-container .swp-slide-services .swp-services-scard .swp-services-scard-header h2 {
+  @apply pl-2 font-bold;
+}
+
+.swiper-container .swp-slide-services .swp-services-scard .swp-services-scard-header div {
+  @apply flex justify-end w-full;
+}
+
+.swiper-container .swp-slide-services .swp-services-scard .swp-services-scard-header div a {
+  @apply absolute mt-2 ml-3 text-gray-500 hover:text-smart-200;
+}
+
+.swiper-container .swp-slide-services .swp-services-scard .swp-services-scard-content {
+  @apply w-full leading-5;
+}
+
+.swiper-container .swp-slide-services .swp-services-scard .swp-services-scard-content p {
+  @apply w-full ml-0 font-bold text-justify text-gray-400 line-clamp-2;
+}
+
+.swiper-container .swp-slide-testimonials {
+  @apply h-full px-12;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard {
+  @apply p-4;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard i {
+  @apply font-bold text-gray-300 transform opacity-70;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard .swp-testimonials-scard-header {
+  @apply flex-1 h-full pl-2;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard .swp-testimonials-scard-header header {
+  @apply flex-1 px-3 py-1;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard .swp-testimonials-scard-header header p {
+  @apply w-full ml-0 font-bold text-justify text-gray-400 line-clamp-3 italic;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard .swp-testimonials-scard-header footer {
+  @apply h-4 flex items-center justify-end;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard .swp-testimonials-scard-header footer p {
+  @apply font-bold text-smart-200 transform;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard .swp-testimonials-scard-header .line-top {
+  @apply px-3 border-t border-gray-200;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard .swp-testimonials-scard-header .line-bottom {
+  @apply px-3 border-b border-gray-200;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard .swp-testimonials-scard-content {
+  @apply w-full leading-5;
+}
+
+.swiper-container .swp-slide-testimonials .swp-testimonials-scard .swp-testimonials-scard-content p {
+  @apply w-full ml-0 font-bold text-justify text-gray-400 line-clamp-2;
+}
+
+.swiper-container .swp-slide-promotions .swp-promotions-scard {
+  @apply fixed w-full h-full;
+}
+
+.swiper-container .swp-slide-promotions .swp-promotions-scard img {
+  @apply absolute object-cover object-center w-full h-full;
+}
+
+.swiper-container .swp-btn {
+  @apply -mt-6 transform scale-75 xl:scale-75;
+}
+
+.swiper-container .swp-btn-promo {
+  @apply absolute z-10 flex items-center w-8 h-8 text-4xl transform scale-75 bg-white rounded-full lg:scale-90 text-smart-200;
+}
+
+.swiper-container .swp-btn-promo:after {
+  @apply hidden;
+}
+
+.swiper-container .swp-btn-promo.swp-btn-prev {
+  @apply left-auto right-14;
+  top: 92% !important;
+}
+
+.swiper-container .swp-btn-promo.swp-btn-next {
+  @apply left-auto right-2;
+  top: 92% !important;
+}
+/*# sourceMappingURL=carousel.component.css.map */

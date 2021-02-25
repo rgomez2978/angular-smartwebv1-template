@@ -1,0 +1,24 @@
+.swiper-container {
+  @apply py-0;
+}
+
+.swiper-container .swiper-wrapper {
+  @apply flex flex-row;
+}
+
+.swiper-container .swiper-wrapper.swp-clients {
+  @apply h-24 py-5;
+}
+
+.swiper-container .swiper-wrapper.swp-services {
+  @apply h-32 py-5;
+}
+
+.swiper-container .swiper-wrapper.swp-testimonial {
+  @apply py-5 h-36;
+}
+
+.swiper-container .swiper-wrapper.swp-promotions {
+  @apply w-full h-full;
+}
+/*# sourceMappingURL=header.component.css.map */

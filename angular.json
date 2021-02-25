@@ -32,15 +32,11 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/fonts/geometrica.scss",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "node_modules/wowjs/css/libs/animate.css",
-              "node_modules/animate.css/animate.css",
+              "src/tailwind.scss",
               "node_modules/swiper/swiper.min.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.slim.min.js",
-              "node_modules/wowjs/dist/wow.js"
+              "node_modules/jquery/dist/jquery.slim.min.js"
             ]
           },
           "configurations": {
@@ -61,8 +57,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "50mb"
                 },
                 {
                   "type": "anyComponentStyle",

@@ -21,8 +21,6 @@ import { LoadingComponent } from './loading/loading.component';
 import { TitleHeaderComponent } from './title-header/title-header.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
-
-
 @NgModule({
   declarations: [
     FooterComponent,
@@ -43,12 +41,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     LoadingComponent,
     TitleHeaderComponent,
     BreadcrumbComponent,
-
   ],
-  imports: [
-    CommonModule,
-    NgxUsefulSwiperModule
-  ],
+  imports: [CommonModule, NgxUsefulSwiperModule],
   exports: [
     FooterComponent,
     NavbarComponent,
@@ -68,6 +62,6 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     LoadingComponent,
     TitleHeaderComponent,
     BreadcrumbComponent,
-  ]
+  ],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

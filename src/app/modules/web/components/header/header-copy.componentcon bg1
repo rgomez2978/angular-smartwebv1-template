@@ -1,0 +1,134 @@
+<!-- HEADER - SLIDER -->
+<swiper [config]="configHeaderSlide" class="swiper-container" *ngIf="type === 'slider'"
+    style="background-image:url('./assets/fondo_banner.jpg')">
+    <!-- slide content -->
+    <div class="swiper-wrapper swp-home ">
+        <!-- slide -->
+        <div class=" swp-row-start swiper-slide swp-slide-home" *ngFor="let item of data">
+
+            <!-- card  -->
+            <article class="swp-row-start swp-home-scard">
+                <div class="swp-row-start swp-home-scard-content">
+                    <div class="swp-row-start swp-home-scard-img">
+                        <img *ngIf="item.image !== ''" [src]="item.image" class="object-cover object-center">
+                    </div>
+                    <div class="swp-row-start swp-home-scard-txt">
+                        <section class="swp-col-center">
+                            <h1 class="title-first">{{ item.title}}</h1>
+                            <h1 class="title-second">{{ item.title2}}</h1>
+                            <p>{{ item.description}}</p>
+                            <div *ngIf="item.buttons.length > 0" class="swp-row-end btn-content ">
+                                <div *ngFor="let itemBtn of item.buttons; let i = index">
+                                    <div class="btn-object"
+                                        [ngClass]="itemBtn.type === 'active'?'btn-active':'btn-inactive'">
+                                        <a [href]="itemBtn.link">{{itemBtn.name}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+                <!--
+                    <div class="relative bg--red-500 pb-2/3">
+                        <img class="absolute object-cover w-full h-full">
+                    </div> -->
+
+            </article>
+        </div>
+    </div>
+    <!-- Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+    <!-- Arrows -->
+    <div class="transform scale-75 lg:scale-90 swiper-button-next swiper-button-white"></div>
+    <div class="transform scale-75 lg:scale-90 swiper-button-prev swiper-button-white"></div>
+</swiper>
+
+
+<!-- HEADER - INTERN -->
+<section class="bg-cover" *ngIf="type === 'intern'"
+    [ngStyle]="{ 'background-image': 'url(' + data[0].background + ')'}">
+    <div class="flex flex-row w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80">
+        <article class="flex flex-row items-center justify-start w-full h-full px-5 py-2 lg:px-10">
+            <section class="flex flex-col items-start justify-center w-full h-full pl-4 sm:px-0 sm:pr-4">
+                <div
+                    class="flex flex-row items-center justify-start w-full -mb-1 text-2xl font-black uppercase sm:mb-1 md:mb-1 lg:mb-2 sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl">
+                    <h1 class="w-auto text-white ">
+                        {{ data[0].title}}
+                    </h1>
+                    <h1 class="w-auto text-smart-700" [ngClass]="words === 1 ?'pl-0':'pl-3'">
+                        {{ data[0].title2}}
+                    </h1>
+                </div>
+                <p
+                    class="flex px-0 mb-0 text-sm font-normal text-justify text-white line-clamp-4 md:line-clamp-none sm:mb-2 md:mb-6 sm:p-0 sm:text-sm md:text-sm lg:text-xl xl:text-2xl">
+                    {{ data[0].description}}
+                </p>
+                <div *ngIf="data[0].buttons.length > 0">
+                    <div
+                        class="flex flex-row items-center justify-end w-full pr-0 ml-0 space-x-4 text-xs font-bold transform scale-75 lg:pr-20 md:scale-90 lg:scale-95 xl:scale-100">
+                        <div *ngFor="let itemBtn of data[0].buttons; let i = index">
+                            <div class="p-2 font-bold uppercase transform border-2 rounded focus:outline-none"
+                                [ngClass]="itemBtn.type === 'active'?'text-smart-700 bg-transparent border-smart-700   hover:bg-smart-700 hover:border-smart-700 hover:text-smart-400 ':'bg-transparente  border-white hover:bg-white hover:border-white text-white hover:text-smart-400'">
+                                <a [href]="itemBtn.link">{{itemBtn.name}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <img *ngIf="data[0].image !== ''" [src]="data[0].image" class="hidden sm:block sm:h-full">
+        </article>
+    </div>
+</section>
+
+<!-- HEADER - CONTACTS -->
+<section class="bg-cover" *ngIf="type === 'contacts'"
+    [ngStyle]="{ 'background-image': 'url(' + data[0].background + ')'}">
+    <div class="flex flex-row w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80">
+        <article class="flex flex-row items-center justify-start w-full h-full px-5 py-2 lg:px-10">
+            <section
+                class="flex flex-col items-start justify-center w-full h-auto pl-4 sm:px-0 sm:pr-4 md:pr-5 lg:pr-20">
+                <div
+                    class="flex flex-row items-center justify-start w-full -mb-1 text-2xl font-black uppercase sm:mb-1 md:mb-1 lg:mb-2 sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl">
+                    <h1 class="w-auto text-white ">
+                        {{ data[0].title}}
+                    </h1>
+                    <h1 class="w-auto text-smart-700" [ngClass]="words === 1 ?'pl-0':'pl-3'">
+                        {{ data[0].title2}}
+                    </h1>
+                </div>
+                <p
+                    class="flex px-0 mb-2 text-sm font-normal text-justify text-white md:mb-4 line-clamp-4 md:line-clamp-none sm:p-0 sm:text-sm md:text-sm lg:text-xl xl:text-2xl">
+                    {{ data[0].description}}
+                </p>
+                <div *ngFor="let itemCont of data[0].contact; let i = index"
+                    class="flex flex-row items-center justify-start w-full pr-0 ml-0 space-x-0 text-xs font-bold md:space-x-4">
+                    <div class="flex flex-col h-auto pr-6 sm:pr-4 lg:pr-10">
+                        <div *ngFor="let itemContEmail of itemCont.emails; let j = index"
+                            class="flex flex-row justify-start h-auto text-sm font-normal text-white items sm:text-sm md:text-sm lg:text-base xl:text-lg">
+                            <div class="pr-2">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <p> {{ itemContEmail.description }}</p>
+                        </div>
+                        <app-socials class="mt-1" [data]="itemCont.socials" [color]="'white'"
+                            [size]="'text-sm sm:text-sm md:text-sm lg:text-base xl:text-lg'" [space]="'space-x-5'">
+                        </app-socials>
+                    </div>
+                    <div class="flex flex-col h-auto pr-0 ">
+                        <div *ngFor="let itemContEmail of itemCont.phones; let j = index"
+                            class="flex flex-row justify-start h-auto text-sm font-normal text-white items sm:text-sm md:text-sm lg:text-base xl:text-lg">
+                            <div class="pr-2">
+                                <i class="fas fa-phone-square-alt"></i>
+                            </div>
+                            <p> +{{ itemContEmail.cod_country }} ({{ itemContEmail.cod_area }}) {{ itemContEmail.number
+                                }}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <img *ngIf="data[0].image !== ''" [src]="data[0].image"
+                class="hidden sm:block sm:h-36 md:h-48 lg:h-56 xl:h-64">
+        </article>
+    </div>
+</section>

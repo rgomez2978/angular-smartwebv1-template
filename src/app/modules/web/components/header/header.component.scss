@@ -1,18 +1,235 @@
+// HEADER SLIDER
 .swiper-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 100%;
+  @apply py-0 mt-10 bg-cover;
+
+  .swiper-wrapper {
+    @apply flex flex-row;
+
+    &.hd-home {
+      // @apply w-full h-52 sm:h-64 md:h-80 lg:h-96 xl:h-100;
+      @apply w-full;
+    }
+  }
+
+  .swp-card {
+    @apply w-full h-full p-8 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-lg;
+  }
+
+  .swp-full {
+    @apply flex justify-start;
+  }
+
+  .swp-row-start {
+    @apply flex flex-row items-center justify-start;
+  }
+
+  .swp-row-end {
+    @apply flex flex-row items-center justify-end;
+  }
+  .swp-col-start {
+    @apply flex flex-col items-start justify-start;
+  }
+
+  .swp-col-center {
+    @apply flex flex-col items-start justify-center;
+  }
+  // Configuracion slide - Sliders
+  .swp-slide-home {
+    @apply w-full h-auto  px-0 py-0 sm:py-6;
+    .swp-home-bg {
+      @apply relative w-full h-52 sm:h-64 md:h-80 lg:h-96 xl:h-100;
+      .img-banner {
+        @apply absolute object-cover object-center;
+      }
+    }
+    .swp-home-scard {
+      @apply px-12 md:px-16 py-0 sm:py-6 w-full h-52 sm:h-64 md:h-80 lg:h-96 xl:h-100  absolute;
+
+      .swp-home-scard-content {
+        @apply w-full h-full;
+
+        .swp-home-scard-img {
+          @apply flex-1 h-full  justify-end;
+
+          img {
+            @apply w-full md:w-11/12;
+          }
+        }
+
+        .swp-home-scard-txt {
+          @apply h-full w-1/2 lg:w-1/2;
+
+          section {
+            @apply w-full h-full;
+
+            .title-first {
+              @apply w-full text-xl font-bold text-white capitalize sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl;
+            }
+            .title-second {
+              @apply w-full mb-0 text-xl font-black uppercase text-smart-700 sm:mb-2 md:mb-2 lg:mb-4 sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl;
+            }
+
+            p {
+              @apply w-full px-0 py-2 mb-0 text-xs font-bold text-justify text-white sm:mb-2 md:mb-6 sm:p-0 sm:text-sm md:text-sm lg:text-xl xl:text-2xl;
+            }
+
+            .btn-content {
+              @apply w-full ml-0 space-x-4 text-xs transform scale-75 md:scale-90 lg:scale-95 xl:scale-100;
+
+              .btn-object {
+                @apply p-2 font-bold uppercase transform border-2 rounded border-smart-400 focus:outline-none;
+              }
+
+              .btn-active {
+                @apply text-white bg-smart-400  hover:bg-smart-500 hover:border-smart-500;
+              }
+
+              .btn-inactive {
+                @apply bg-transparent hover:bg-smart-300 hover:border-smart-300 text-smart-400 hover:text-white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swp-pag {
+    @apply outline-none bottom-5 md:bottom-5 lg:bottom-3;
+  }
+  .swp-btn {
+    @apply transform scale-75 lg:scale-90 opacity-70;
+  }
 }
 
-.swiper-slide {
-  // background-size: cover;
-  // background-position: center;
-  // margin-left: auto;
-  // margin-right: auto;
-  // font-size: 18px;
-  // color: #fff;
-  // -webkit-box-sizing: border-box;
-  // box-sizing: border-box;
-  // padding: 40px 60px;
+// HEADER FIJO
+.header-container {
+  @apply py-0 mt-0;
+
+  .header-wrapper {
+    @apply flex flex-row;
+
+    &.hd-intern {
+      @apply h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80;
+    }
+  }
+
+  .hd-full {
+    @apply flex justify-start;
+  }
+
+  .hd-row-start {
+    @apply flex flex-row items-center justify-start;
+  }
+
+  .hd-row-end {
+    @apply flex flex-row items-center justify-end;
+  }
+
+  .hd-row-center {
+    @apply flex flex-row items-center justify-center;
+  }
+
+  .hd-col-start {
+    @apply flex flex-col items-start justify-start;
+  }
+
+  .hd-col-center {
+    @apply flex flex-col items-start justify-center;
+  }
+
+  .hd-intern-bg {
+    @apply relative w-full;
+
+    .img-banner {
+      @apply absolute object-cover object-center w-full h-full;
+    }
+
+    .hd-intern-scard {
+      @apply px-5 py-0 sm:py-6 w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 absolute;
+
+      .hd-intern-scard-content {
+        @apply w-full h-full;
+
+        .hd-intern-scard-txt {
+          @apply h-full w-full md:w-2/3;
+
+          section {
+            @apply w-full h-full;
+
+            .title-cont {
+              @apply pb-0 md:pb-2;
+              .title-first {
+                @apply w-auto font-bold text-white uppercase text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl;
+              }
+
+              .title-second {
+                @apply w-auto mb-0 text-xl font-black text-smart-700 uppercase text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl;
+              }
+            }
+
+            p {
+              @apply w-full px-0 py-2 mb-0 text-xs font-bold text-justify text-white sm:mb-2 md:mb-6 sm:p-0 sm:text-sm md:text-sm lg:text-xl xl:text-2xl;
+            }
+
+            .btn-content {
+              @apply w-full pr-0 ml-0 space-x-4 text-xs font-bold transform scale-75 lg:pr-20 md:scale-90 lg:scale-95 xl:scale-100;
+
+              .btn-object {
+                @apply p-2 font-bold uppercase transform border-2 rounded focus:outline-none;
+              }
+
+              .btn-active {
+                @apply text-smart-700 bg-transparent border-smart-700   hover:bg-smart-700 hover:border-smart-700 hover:text-smart-400;
+              }
+
+              .btn-inactive {
+                @apply bg-transparent  border-white hover:bg-white hover:border-white text-white hover:text-smart-400;
+              }
+            }
+
+            .cont-info {
+              @apply h-auto w-full pr-0 ml-0 space-x-0 md:space-x-0 text-xs font-normal;
+
+              .cont-info-left {
+                @apply space-y-0 md:space-y-2 w-1/2;
+
+                .info-left-emails {
+                  @apply w-full h-6 text-sm font-normal text-white sm:text-sm md:text-sm lg:text-base xl:text-lg;
+                  i {
+                    @apply pr-2 text-base md:text-xl;
+                  }
+                  p {
+                    @apply mb-0;
+                  }
+                }
+              }
+
+              .cont-info-right {
+                @apply space-y-0 md:space-y-2  w-1/2;
+
+                .info-right-phones {
+                  @apply w-full h-6 mt-1 sm:mt-0 lg:-mt-1 text-sm font-normal text-white sm:text-sm md:text-sm lg:text-base xl:text-lg;
+                  i {
+                    @apply pr-2 text-base md:text-xl;
+                  }
+                  p {
+                    @apply mb-0;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .hd-intern-scard-img {
+          @apply flex-1 h-full items-center justify-center hidden md:flex pl-5;
+
+          img {
+            @apply w-full lg:w-11/12 xl:w-9/12 object-contain;
+          }
+        }
+      }
+    }
+  }
 }

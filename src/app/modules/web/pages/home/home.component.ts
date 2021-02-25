@@ -3,12 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
   contenHome: any = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.initArray();
@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit {
    * -------------------------------------------------------
    */
   initArray() {
-
     this.contenHome = [
       {
         header: [
@@ -31,7 +30,8 @@ export class HomeComponent implements OnInit {
             image: './assets/home/img_banner_home.png',
             title: 'Soluciones rápidas',
             title2: '¡para tu negocio!',
-            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo invidunt ut labore.',
+            description:
+              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo invidunt ut labore.',
             order: 1,
             buttons: [
               {
@@ -39,24 +39,25 @@ export class HomeComponent implements OnInit {
                 type: 'active',
                 name: 'empezar',
                 link: '/privacy',
-                order: 1
+                order: 1,
               },
               {
                 btn_id: 2,
                 type: 'normal',
                 name: 'demostración',
                 link: '/related',
-                order: 2
+                order: 2,
               },
             ],
           },
           {
             hs_id: 2,
             background: './assets/fondo_banner.jpg',
-            image: '',
+            image: './assets/home/img_banner_home2.png',
             title: 'Soluciones rápidas',
             title2: '¡para tu negocio2!',
-            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo invidunt ut labore.',
+            description:
+              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo invidunt ut labore.',
             order: 2,
             buttons: [
               {
@@ -64,14 +65,14 @@ export class HomeComponent implements OnInit {
                 type: 'active',
                 name: 'empezar2',
                 link: '/privacy',
-                order: 1
+                order: 1,
               },
               {
                 btn_id: 2,
                 type: 'normal',
                 name: 'demostración2',
                 link: '/related',
-                order: 2
+                order: 2,
               },
             ],
           },
@@ -82,7 +83,8 @@ export class HomeComponent implements OnInit {
             cta_id: 1,
             location: 'right',
             title: 'Visita nuestras redes sociales',
-            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+            description:
+              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
             background: '',
             image: './assets/home/redes.png',
             order: 1,
@@ -132,7 +134,7 @@ export class HomeComponent implements OnInit {
                 order: 6,
               },
             ],
-          }
+          },
         ],
         carousel: [
           {
@@ -142,7 +144,7 @@ export class HomeComponent implements OnInit {
             title: '',
             description: '',
             link: '',
-            order: 1
+            order: 1,
           },
           {
             cc_id: 2,
@@ -151,7 +153,7 @@ export class HomeComponent implements OnInit {
             title: '',
             description: '',
             link: '',
-            order: 2
+            order: 2,
           },
           {
             cc_id: 3,
@@ -160,7 +162,7 @@ export class HomeComponent implements OnInit {
             title: '',
             description: '',
             link: '',
-            order: 3
+            order: 3,
           },
           {
             cc_id: 4,
@@ -169,7 +171,7 @@ export class HomeComponent implements OnInit {
             title: '',
             description: '',
             link: '',
-            order: 4
+            order: 4,
           },
           {
             cc_id: 5,
@@ -178,7 +180,7 @@ export class HomeComponent implements OnInit {
             title: '',
             description: '',
             link: '',
-            order: 5
+            order: 5,
           },
           {
             cc_id: 6,
@@ -187,12 +189,10 @@ export class HomeComponent implements OnInit {
             title: '',
             description: '',
             link: '',
-            order: 6
+            order: 6,
           },
         ],
-      }
+      },
     ];
-
-
   }
 }

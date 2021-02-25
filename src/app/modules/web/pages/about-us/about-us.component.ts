@@ -3,13 +3,12 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.scss']
+  styleUrls: ['./about-us.component.scss'],
 })
 export class AboutUsComponent implements OnInit {
   contentAbout: any = [];
 
-  constructor() { }
-
+  constructor() {}
 
   ngOnInit(): void {
     this.initArray();
@@ -22,39 +21,41 @@ export class AboutUsComponent implements OnInit {
    * -------------------------------------------------------
    */
   initArray() {
-
     this.contentAbout = [
       {
         header: [
           {
             hs_id: 1,
             background: './assets/fondo_banner_intern.jpg',
-            image: './assets/aboutus/img_banner_about.png',
+            image: './assets/aboutus/img_banner_about2.png',
             title: 'Acerca de',
             title2: 'Nosotros',
-            description: 'Contamos con la experiencia necesaria para brindar servicios en organizaciones como la suya, a fin de planificar, implementar y administrar soluciones digitales multiplataforma personalizadas',
+            description:
+              'Contamos con la experiencia necesaria para brindar servicios en organizaciones como la suya, a fin de planificar, implementar y administrar soluciones digitales multiplataforma personalizadas',
             order: 1,
             buttons: [],
-          }
+          },
         ],
         cta: [
           {
             cta_id: 1,
             location: 'left',
             title: 'Misión',
-            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+            description:
+              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
             background: '',
             image: './assets/aboutus/mision.png',
             order: 1,
             features: [],
-            socials:[],
+            socials: [],
             buttons: [],
           },
           {
             cta_id: 2,
             location: 'right',
             title: 'Visión',
-            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+            description:
+              'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
             background: '',
             image: './assets/aboutus/vision.png',
             order: 2,
@@ -65,7 +66,7 @@ export class AboutUsComponent implements OnInit {
                 icon: {
                   name: 'fas fa-check-circle',
                 },
-                order: 1
+                order: 1,
               },
               {
                 f_id: 2,
@@ -73,7 +74,7 @@ export class AboutUsComponent implements OnInit {
                 icon: {
                   name: 'fas fa-check-circle',
                 },
-                order: 2
+                order: 2,
               },
               {
                 f_id: 3,
@@ -81,7 +82,7 @@ export class AboutUsComponent implements OnInit {
                 icon: {
                   name: 'fas fa-check-circle',
                 },
-                order: 3
+                order: 3,
               },
               {
                 f_id: 4,
@@ -89,19 +90,15 @@ export class AboutUsComponent implements OnInit {
                 icon: {
                   name: 'fas fa-check-circle',
                 },
-                order: 4
-              }
+                order: 4,
+              },
             ],
-            socials:[],
+            socials: [],
             buttons: [],
           },
         ],
         tabs: [],
-
-      }
+      },
     ];
-
   }
-
-
 }

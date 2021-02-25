@@ -3,8 +3,13 @@
 <app-header [data]="contentProducts[0].header" [type]="'intern'" [words]="2"></app-header>
 <br>
 <br>
-<app-title-header [label1]="'nuestras'" [label2]="'promociones'" [words]="2" ></app-title-header>
-<app-call-to-action [data]="contentProducts[0].promotions" [type]="'promotions'" ></app-call-to-action>
+<app-title-header [label1]="'nuestros'" [label2]="'productos'" [words]="2"></app-title-header>
+<app-tabs [data]="contentProducts[0].products" [type]="'products'"></app-tabs>
+
+<!-- <app-carousel [data]="contentProducts[0].services" [type]="'services'"></app-carousel> -->
+
+<app-title-header [label1]="'nuestras'" [label2]="'promociones'" [words]="2"></app-title-header>
+<app-call-to-action [data]="contentProducts[0].promotions" [type]="'promotions'"></app-call-to-action>
 <br>
 <br>
 <br>

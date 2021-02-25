@@ -1,0 +1,101 @@
+.swiper-container {
+  @apply py-0 mt-16 bg-cover;
+
+  .swiper-wrapper {
+    @apply flex flex-row;
+
+    &.swp-home {
+      // @apply w-full h-52 sm:h-64 md:h-80 lg:h-96 xl:h-100;
+      @apply w-full;
+    }
+
+    &.swp-intern {
+      @apply h-32 py-5;
+    }
+  }
+
+  .swp-card {
+    @apply w-full h-full p-8 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-lg;
+  }
+
+  .swp-full {
+    @apply flex justify-start;
+  }
+
+  .swp-row-start {
+    @apply flex flex-row items-center justify-start;
+  }
+
+  .swp-row-end {
+    @apply flex flex-row items-center justify-end;
+  }
+  .swp-col-start {
+    @apply flex flex-col items-start justify-start;
+  }
+
+  .swp-col-center {
+    @apply flex flex-col items-start justify-center;
+  }
+  // Configuracion slide - Sliders
+  .swp-slide-home {
+    @apply w-full h-auto border border-white px-16 py-0 sm:py-6;
+
+    .swp-home-bg {
+    }
+
+    .swp-home-scard {
+      @apply w-full h-52 sm:h-64 md:h-80 lg:h-96 xl:h-100 border border-white;
+
+      .swp-home-scard-content {
+        @apply w-full h-full;
+
+        .swp-home-scard-img {
+          @apply flex-1 h-full border border-white justify-end;
+
+          img {
+            @apply w-full md:w-11/12;
+          }
+        }
+
+        .swp-home-scard-txt {
+          @apply h-full w-1/2 lg:w-1/2 border border-white;
+
+          section {
+            @apply w-full h-full;
+
+            .title-first {
+              @apply w-full text-xl font-bold text-white capitalize sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl border border-white;
+            }
+            .title-second {
+              @apply w-full mb-0 text-xl font-black uppercase text-smart-700 sm:mb-2 md:mb-2 lg:mb-4 sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl border border-white;
+            }
+
+            p {
+              @apply w-full px-0 py-2 mb-0 text-xs font-bold text-justify text-white sm:mb-2 md:mb-6 sm:p-0 sm:text-sm md:text-sm lg:text-xl xl:text-2xl border border-white;
+            }
+
+            .btn-content {
+              @apply w-full ml-0 space-x-4 text-xs transform scale-75 md:scale-90 lg:scale-95 xl:scale-100 border border-white;
+
+              .btn-object {
+                @apply p-2 font-bold uppercase transform border-2 rounded border-smart-400 focus:outline-none;
+              }
+
+              .btn-active {
+                @apply text-white bg-smart-400  hover:bg-smart-500 hover:border-smart-500;
+              }
+
+              .btn-inactive {
+                @apply bg-transparent hover:bg-smart-300 hover:border-smart-300 text-smart-400 hover:text-white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swp-btn {
+    @apply -mt-6 transform scale-75 xl:scale-75;
+  }
+}

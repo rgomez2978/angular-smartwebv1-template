@@ -62,10 +62,6 @@ export class CarouselComponent implements OnInit {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
   };
 
   // Configuracion carousel - Promotions
@@ -150,10 +146,10 @@ export class CarouselComponent implements OnInit {
     direction: 'horizontal',
     preventClicks: false,
     speed: 800,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: true
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: true
+    // },
     loop: false,
     freeMode: true,
     initialSlide: 0,

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "title-header.component.scss"
+    ],
+    "names": [],
+    "file": "title-header.component.css"
+}

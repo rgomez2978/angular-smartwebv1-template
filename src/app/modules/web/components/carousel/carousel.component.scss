@@ -1,12 +1,173 @@
-.swiper-prom-prev:after,
-.swiper-prom-next:after {
-  display: none !important;
-}
+.swiper-container {
+  @apply py-0;
 
+  &.swp-cont-promo {
+    @apply relative w-full h-full border-2 border-gray-400 shadow-xl;
+  }
+  .swiper-wrapper {
+    @apply flex flex-row;
 
-.swiper-prom-prev,
-.swiper-prom-next {
-  left: auto;
-  right: 10px;
-  top: 92% !important;
+    &.swp-clients {
+      @apply h-24 py-5;
+    }
+
+    &.swp-services {
+      @apply h-32 py-5;
+    }
+
+    &.swp-testimonial {
+      @apply py-5 h-36;
+    }
+
+    &.swp-promotions {
+      @apply w-full h-full;
+    }
+  }
+
+  .swp-card {
+    @apply w-full h-full p-8 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-lg;
+  }
+
+  .swp-card-flat {
+    @apply w-full h-full p-8 overflow-hidden bg-gray-100 border-2 border-gray-300 shadow-sm opacity-80;
+  }
+
+  .swp-full {
+    @apply flex justify-start;
+  }
+
+  .swp-row-start {
+    @apply flex flex-row items-center justify-start;
+  }
+
+  .swp-col-start {
+    @apply flex flex-col items-start justify-start;
+  }
+
+  // Configuracion slide - Clients
+  .swp-slide-clients {
+    @apply h-full px-16;
+
+    .swp-clients-scard {
+      @apply p-10 object-cover object-center;
+    }
+  }
+
+  // Configuracion slide - Service
+  .swp-slide-services {
+    @apply h-full px-12;
+
+    .swp-services-scard {
+      @apply p-4;
+
+      .swp-services-scard-header {
+        @apply w-full pb-1 leading-tight text-smart-200;
+
+        i {
+          @apply font-bold;
+        }
+
+        h2 {
+          @apply pl-2 font-bold;
+        }
+
+        div {
+          @apply flex justify-end w-full;
+
+          a {
+            @apply absolute mt-2 ml-3 text-gray-500 hover:text-smart-200;
+          }
+        }
+      }
+
+      .swp-services-scard-content {
+        @apply w-full leading-5;
+
+        p {
+          @apply w-full ml-0 font-bold text-justify text-gray-400 line-clamp-2;
+        }
+      }
+    }
+  }
+
+  // Configuracion slide - Testimonials
+  .swp-slide-testimonials {
+    @apply h-full px-12;
+
+    .swp-testimonials-scard {
+      @apply p-4;
+
+      i {
+        @apply font-bold text-gray-300 transform opacity-70;
+      }
+
+      .swp-testimonials-scard-header {
+        @apply flex-1 h-full pl-2;
+
+        header {
+          @apply flex-1 px-3 py-1;
+
+          p {
+            @apply w-full ml-0 font-bold text-justify text-gray-400 line-clamp-3 italic;
+          }
+        }
+
+        footer {
+          @apply h-4 flex items-center justify-end;
+
+          p {
+            @apply font-bold text-smart-200 transform;
+          }
+        }
+
+        .line-top {
+          @apply px-3 border-t border-gray-200;
+        }
+
+        .line-bottom {
+          @apply px-3 border-b border-gray-200;
+        }
+      }
+
+      .swp-testimonials-scard-content {
+        @apply w-full leading-5;
+
+        p {
+          @apply w-full ml-0 font-bold text-justify text-gray-400 line-clamp-2;
+        }
+      }
+    }
+  }
+
+  // Configuracion slide - Promotions
+  .swp-slide-promotions {
+    @apply w-full h-full;
+    .swp-promotions-scard {
+      img {
+        @apply absolute object-cover object-center w-full h-full;
+      }
+    }
+  }
+
+  .swp-btn {
+    @apply -mt-6 transform scale-75 xl:scale-75;
+  }
+
+  .swp-btn-promo {
+    @apply absolute z-10 flex items-center w-8 h-8 text-4xl transform scale-75 bg-white rounded-full lg:scale-90 text-smart-200;
+
+    &:after {
+      @apply hidden;
+    }
+
+    &.swp-btn-prev {
+      @apply left-auto right-14;
+      top: 92% !important;
+    }
+
+    &.swp-btn-next {
+      @apply left-auto right-2;
+      top: 92% !important;
+    }
+  }
 }

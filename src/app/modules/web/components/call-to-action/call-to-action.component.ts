@@ -13,7 +13,6 @@ export class CallToActionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
   }
 
 }

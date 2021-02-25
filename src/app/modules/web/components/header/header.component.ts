@@ -6,22 +6,21 @@ import { SwiperOptions } from 'swiper';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-
   @Input() data: any;
   @Input() type: any;
   @Input() words: any;
 
-  constructor(private _router: Router) { }
-
+  constructor(private _router: Router) {}
   // Configuracion Header - Slider
   configHeaderSlide: SwiperOptions = {
     direction: 'horizontal',
+    simulateTouch: false,
     preventClicks: false,
     speed: 800,
-    loop: false,
+    loop: true,
     freeMode: true,
     initialSlide: 0,
     autoHeight: true,
@@ -29,37 +28,19 @@ export class HeaderComponent implements OnInit {
     allowTouchMove: true,
     slidesPerView: 1,
     spaceBetween: 0,
-    autoplay: {
-      delay: 6500,
-      disableOnInteraction: true
-    },
+    // autoplay: {
+    //   delay: 6500,
+    //   disableOnInteraction: true,
+    // },
     navigation: {
       nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      prevEl: '.swiper-button-prev',
     },
     pagination: {
       el: '.swiper-pagination',
-      clickable: true
+      clickable: true,
     },
   };
 
-  ngOnInit(): void {
-  }
-
-
-
-  /**
-   * -------------------------------------------------------
-   * @summary goTo
-   * @description redirecciona a la ruta de cada componete o routerlink
-   * -------------------------------------------------------
-   */
-  goTo(link) {
-    console.log('link :>> ', link);
-    this._router.navigate([link]);
-
-  }
-
-
-
+  ngOnInit(): void {}
 }
