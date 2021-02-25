@@ -1,34 +1,29 @@
 <div *ngIf="type === 'products'" class="flex flex-wrap" id="tabs-id">
-    <div class="w-full" *ngFor="let item of data; let i=index">
-        <ul class="flex flex-row items-center justify-center py-6 mb-0 list-none">
+    <div class="w-full overflow-hidden bg-white border border-gray-200 shadow-lg"
+        *ngFor="let item of data; let i=index">
+        <!-- links -->
+        <ul class="flex flex-row items-center justify-center py-4 mb-0 list-none border border-b-2 border-gray-200">
             <li *ngFor="let itemProd of item.items; let j=index"
-                class="text-3xl text-center border-r-4 border-gray-300 tbli last:border-r-0">
-                <a class="px-5 py-3 leading-normal normal-case " (click)="changeAtiveTab($event, itemProd.id_prod)"
+                class="text-center border-r-2 border-gray-300 lg:border-r-4 sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl tbli last:border-r-0">
+                <a class="px-1 py-3 leading-normal normal-case md:px-2 lg:px-5 "
+                    (click)="changeAtiveTab($event, itemProd.id_prod)"
                     [ngClass]="!itemProd.hidden ?'text-smart-300 font-medium':'text-gray-400 font-normal'">
                     {{itemProd.name}}
                 </a>
             </li>
         </ul>
-        <div class="relative flex flex-col w-full min-w-0 mb-6 break-words rounded shadow-lg">
-            <div class="flex-auto px-4 py-5">
+        <div class="px-3 md:px-12 lg:px-24">
+            <!-- <div class="border-b-2 border-gray-200"></div> -->
+        </div>
+        <!-- contenido -->
+        <div class="flex flex-col w-full min-w-0 mb-6 break-words ">
+            <div class="flex-auto px-4 py-5 md:px-6 lg:px-16 xl:px-24">
                 <div class="tab-content tab-space " *ngFor="let itemProdPage of item.items; let j=index">
-
                     <div class="animate__animated animate__fadeIn" [ngClass]="!itemProdPage.hidden ?'block':'hidden'"
                         id="{{itemProdPage.id_prod}}">
-                        <app-call-to-action [data]="itemProdPage.description[0].cta" [type]="'normal'">
+                        <app-call-to-action [data]="itemProdPage.description[0].cta" [type]="'tabs'">
                         </app-call-to-action>
                     </div>
-                    <!-- <div class="hidden animate__animated animate__fadeIn" id="itemProdPage.id_prod">
-                        <p>
-                            Completely synergize resource taxing relationships via
-                            premier niche markets. Professionally cultivate one-to-one
-                            customer service with robust ideas.
-                            <br />
-                            <br />
-                            Dynamically innovate resource-leveling customer service for
-                            state of the art customer service.
-                        </p>
-                    </div> -->
                 </div>
             </div>
         </div>

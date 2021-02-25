@@ -39,8 +39,9 @@ export class AboutUsComponent implements OnInit {
         cta: [
           {
             cta_id: 1,
-            location: 'left',
+            location: 'right',
             title: 'Misión',
+            padding: '',
             description:
               'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
             background: '',
@@ -52,8 +53,9 @@ export class AboutUsComponent implements OnInit {
           },
           {
             cta_id: 2,
-            location: 'right',
+            location: 'left',
             title: 'Visión',
+            padding: 'pl-0 md:pl-20 xl:pl-40',
             description:
               'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
             background: '',

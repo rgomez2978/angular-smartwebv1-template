@@ -1,0 +1,179 @@
+// HEADER FIJO
+.cta-container {
+  @apply py-0 mt-0;
+
+  .cta-wrapper {
+    @apply flex flex-row w-full h-full;
+
+    &.cta-struct {
+      @apply w-full;
+    }
+  }
+
+  .cta-full {
+    @apply flex justify-start;
+  }
+
+  .cta-row-start {
+    @apply flex flex-row items-center justify-start;
+  }
+
+  .cta-row-end {
+    @apply flex flex-row items-center justify-end;
+  }
+
+  .cta-row-center {
+    @apply flex flex-row items-center justify-center;
+  }
+
+  .cta-row-top {
+    @apply flex flex-row items-start justify-center;
+  }
+
+  .cta-col-start {
+    @apply flex flex-col items-start justify-start;
+  }
+
+  .cta-col-center {
+    @apply flex flex-col items-start justify-center;
+  }
+
+  .cta-struct-bg {
+    @apply relative w-full;
+
+    .img-banner {
+      @apply absolute object-cover object-center w-full h-full;
+    }
+
+    .cta-struct-scard {
+      @apply px-0 py-0 sm:py-6 w-full h-full;
+
+      .cta-struct-scard-content {
+        @apply w-full h-full;
+
+        .cta-struct-scard-txt {
+          @apply h-full w-full md:w-3/5;
+
+          section {
+            @apply w-full h-full;
+
+            .title-cont {
+              @apply pb-0 md:pb-2;
+              .title-first {
+                @apply w-auto font-normal text-smart-300  capitalize text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl;
+              }
+            }
+
+            .title-p {
+              p {
+                @apply w-full px-0 py-2 mb-0 text-xs font-bold text-justify text-gray-500 sm:mb-2 md:mb-6 sm:p-0 sm:text-sm md:text-sm lg:text-xl xl:text-2xl;
+              }
+            }
+            // buttons
+            .btn-content {
+              @apply w-full pr-0 mt-5 ml-0 space-x-4 text-xs font-bold sm:mt-2 sm:text-xs;
+
+              .btn-object {
+                @apply p-2 font-bold uppercase transform border-2 rounded focus:outline-none flex transform scale-75 sm:scale-90 lg:scale-95 xl:scale-100;
+              }
+
+              .btn-active {
+                @apply text-white bg-smart-300 border-smart-300   hover:bg-smart-400 hover:border-smart-400 hover:text-white;
+              }
+
+              .btn-inactive {
+                @apply bg-transparent  border-smart-300 hover:bg-smart-200 hover:border-smart-200 text-smart-300 hover:text-white;
+              }
+            }
+            // bullets
+            .ft-content {
+              @apply w-full pl-6 pr-0 mt-0 ml-0 space-x-4 text-sm font-bold text-gray-500 sm:text-base md:text-base lg:text-xl xl:text-xl;
+              .ft-object {
+                @apply space-y-2;
+
+                i {
+                  @apply text-smart-300 mr-2;
+                }
+              }
+            }
+            // bullets - tabs
+            .ft-content-tab {
+              @apply w-full pl-6 pr-0 mt-0 ml-0 space-x-4 text-sm font-bold text-gray-500 sm:text-base md:text-base lg:text-xl xl:text-xl;
+              .ft-object-tab {
+                @apply space-y-2;
+
+                i {
+                  @apply text-smart-200 mr-2;
+                }
+              }
+            }
+            // socials
+            .sl-content {
+              @apply w-full pr-0 mt-5 ml-0 space-x-4 text-xs font-bold sm:mt-2 sm:text-xs;
+            }
+          }
+        }
+
+        .cta-struct-scard-txt-tab {
+          @apply h-full w-full md:w-1/2;
+          section {
+            @apply w-full h-full;
+
+            .title-cont {
+              @apply pb-0 md:pb-2;
+              .title-first {
+                @apply w-auto font-normal text-smart-200  capitalize text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-2xl;
+              }
+            }
+
+            .title-p {
+              p {
+                @apply w-full px-0 py-2 mb-0 text-xs font-bold text-justify text-gray-500 sm:mb-2 md:mb-6 sm:p-0 sm:text-sm md:text-sm lg:text-xl xl:text-xl;
+              }
+            }
+
+            // buttons
+            .btn-content {
+              @apply w-full pr-0 mt-5 ml-0 space-x-4 text-xs font-bold sm:mt-2 sm:text-xs;
+
+              .btn-object {
+                @apply p-2 font-bold uppercase transform border-2 rounded focus:outline-none flex transform scale-75 sm:scale-90 lg:scale-95 xl:scale-100;
+              }
+
+              .btn-active {
+                @apply text-white bg-smart-300 border-smart-300   hover:bg-smart-400 hover:border-smart-400 hover:text-white;
+              }
+
+              .btn-inactive {
+                @apply bg-transparent  border-smart-300 hover:bg-smart-200 hover:border-smart-200 text-smart-300 hover:text-white;
+              }
+            }
+            // bullets - tabs
+            .ft-content {
+              @apply w-full pl-6 pr-0 mt-0 ml-0 space-x-4 text-sm font-bold text-gray-500 sm:text-base md:text-base lg:text-xl xl:text-xl;
+              .ft-object {
+                @apply space-y-2;
+
+                i {
+                  @apply text-smart-200 mr-2;
+                }
+              }
+            }
+            // socials
+            .sl-content {
+              @apply w-full pr-0 mt-5 ml-0 space-x-4 text-xs font-bold sm:mt-2 sm:text-xs;
+            }
+          }
+        }
+
+        .cta-struct-scard-img {
+          @apply flex-1 h-full hidden md:flex;
+
+          img {
+            @apply w-full lg:w-11/12 xl:w-9/12 object-contain;
+          }
+        }
+      }
+    }
+  }
+}

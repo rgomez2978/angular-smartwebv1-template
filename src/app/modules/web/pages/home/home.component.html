@@ -1,9 +1,11 @@
 <app-header [data]="contenHome[0].header" [type]="'slider'"></app-header>
-<br>
-<app-call-to-action [data]="contenHome[0].cta" [type]="'normal'"></app-call-to-action>
-<br>
-<br>
-<app-title-header [label1]="'nuestros'" [label2]="'clientes'" [words]="2"></app-title-header>
-<app-carousel [data]="contenHome[0].carousel" [type]="'clients'"></app-carousel>
-<br>
-<br>
+<div class="px-3 md:px-5 lg:px-10 xl:px-16">
+    <br>
+    <app-call-to-action [data]="contenHome[0].cta" [type]="'normal'"></app-call-to-action>
+    <br>
+    <br>
+    <app-title-header [label1]="'nuestros'" [label2]="'clientes'" [words]="2"></app-title-header>
+    <app-carousel [data]="contenHome[0].carousel" [type]="'clients'"></app-carousel>
+    <br>
+    <br>
+</div>
