@@ -26,18 +26,13 @@
               "path": "webpack.config.js"
             },
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "src/styles.scss",
               "src/tailwind.scss",
               "node_modules/swiper/swiper.min.css"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.slim.min.js"
-            ]
+            "scripts": ["node_modules/jquery/dist/jquery.slim.min.js"]
           },
           "configurations": {
             "production": {
@@ -62,8 +57,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 }
               ]
             }
@@ -96,13 +91,8 @@
               "path": "webpack.config.js"
             },
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -114,9 +104,7 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {

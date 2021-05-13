@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // import { PagesRoutingModule } from './pages-routing.module';
+import { ComponentsModule } from '../components/components.module';
 import { WebRoutingModule } from '../web-routing.module';
 import { PagesComponent } from './pages.component';
 
@@ -13,7 +14,6 @@ import { ClientsComponent } from './clients/clients.component';
 import { PartnersComponent } from './partners/partners.component';
 import { NewsComponent } from './news/news.component';
 import { ContactsPageComponent } from './contacts/contacts-page.component';
-import { ComponentsModule } from '../components/components.module';
 import { PrivacyPoliciesComponent } from './privacy-policies/privacy-policies.component';
 import { LegalTermsComponent } from './legal-terms/legal-terms.component';
 import { RelatedSitesComponent } from './related-sites/related-sites.component';

@@ -1,8 +1,13 @@
+require("dotenv").config();
 const colors = require("tailwindcss/colors");
+const enablePurge = process.env.ENABLE_PURGE || false;
 
 module.exports = {
   important: true,
-  purge: ["./src/**/*.html", "./src/**/*.ts"],
+  purge: {
+    enabled: enablePurge,
+    content: ["./src/**/*.html", "./src/**/*.scss"],
+  },
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {

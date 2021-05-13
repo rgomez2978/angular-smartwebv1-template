@@ -1,7 +1,7 @@
 <div class="flex flex-row {{space}}">
     <div *ngFor="let item of data; let i = index" class="flex flex-row items-center justify-start ">
         <a [href]="item.link" target="_blank">
-            <i *ngIf="color === 'orig'" class="{{item.icon}} {{size}} text-{{item.title}}"></i>
+            <i *ngIf="color === 'orig'" class="{{item.icon}} {{size}} color-{{item.title}}"></i>
             <i *ngIf="color !== 'orig'" class="{{item.icon}} {{size}} text-{{color}}"></i>
         </a>
     </div>
