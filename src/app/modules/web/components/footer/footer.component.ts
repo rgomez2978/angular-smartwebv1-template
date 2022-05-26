@@ -40,7 +40,7 @@ export class FooterComponent implements OnInit {
    */
   getURlView() {
     this.urlActive = '/' + this._router.url.split('/')[1];
-    console.log('url footer :>> ', this.urlActive);
+    // console.log('url footer :>> ', this.urlActive);
   }
 
   /**

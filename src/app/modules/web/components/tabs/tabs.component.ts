@@ -13,8 +13,8 @@ export class TabsComponent implements OnInit {
   ngOnInit(): void {}
 
   changeAtiveTab(event, tabID) {
-    console.log('event :>> ', event);
-    console.log('tabID :>> ', tabID);
+    // console.log('event :>> ', event);
+    // console.log('tabID :>> ', tabID);
 
     let element = event.target;
     while (element.nodeName !== 'A') {

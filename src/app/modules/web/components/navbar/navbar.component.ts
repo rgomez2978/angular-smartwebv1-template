@@ -48,7 +48,7 @@ export class NavbarComponent implements OnInit {
    */
   getURlView() {
     this.urlActive = '/' + this._router.url.split('/')[1];
-    console.log('url :>> ', this.urlActive);
+    // console.log('url :>> ', this.urlActive);
   }
 
   /**

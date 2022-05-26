@@ -22,7 +22,7 @@ export class SocialsComponent implements OnInit {
       } else {
         this.iconColor = this.color;
       }
-      console.log('this.iconColor :>> ', this.iconColor);
+      // console.log('this.iconColor :>> ', this.iconColor);
     }, 100);
   }
 

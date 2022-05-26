@@ -1,27 +1,64 @@
-# Smartweb
+![styles](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![styles](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![styles](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![styles](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+![styles](https://img.shields.io/badge/JSON-gray?style=for-the-badge&logo=json&logoColor=white)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
+# Template web - SMARTWEB V1
+---
 
-## Development server
+Primer Template propuesto para la web de la empresa smartsuitetools, elaborado en [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0, Typescript, jQuery, TailwindCSS.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[DEMO](https://rgomez2978.github.io/angular-smartwebv1-template)
 
-## Code scaffolding
+## Instalación de Librerias
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A continuación se indican las librerias necesarias para la ejecución del proyecto.
 
-## Build
+    npm install jquery --save-dev
+    npm install @types/jquery --save-dev
+    npm install -D @types/jquery --save-dev
+    npm install jquery.easing --save-dev
+    npm install animate.css --save-dev
+    npm i ngx-wow --save-dev
+    npm install ngx-useful-swiper@latest swiper --save-dev
+    npm install zone.js --save-dev
+    npm install @tailwindcss/line-clamp --save-dev
+    npm install @fortawesome/fontawesome-free --save
+    npm install dotenv --save-dev
+    ng add angular-cli-ghpages
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Levantar proyecto Angular
 
-## Running unit tests
+    ng serve
+    ng serve -o
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Exportar proyecto - Build
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Ejecute el comando `ng build` para exportar el proyecto. Al exportar el proyecto se almacenarán en el directorio `docs/`. Utilice el flag `--base-href` para exportar hacia produccion.
 
-## Further help
+    ng build --base-href=https://rgomez2978.github.io/angular-smartwebv1-template/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Exportar proyecto en rama githubpage
+
+Ejecute el comando `ng deploy` para exportar el proyecto. Al exportar el proyecto se almacenarán en el directorio `docs/`. Utilice el flag `--base-href` para exportar hacia produccion.
+
+    ng deploy --base-href=https://rgomez2978.github.io/angular-smartwebv1-template/
+
+
+
+## Screenshots del proyecto
+
+
+![Screenshot](./src/assets/screenshots/smartweb-v1_1.png?raw=true)
+
+![Screenshot](./src/assets/screenshots/smartweb-v1_2.png?raw=true)
+
+![Screenshot](./src/assets/screenshots/smartweb-v1_3.png?raw=true)
+
+![Screenshot](./src/assets/screenshots/smartweb-v1_4.png?raw=true)
+
+
